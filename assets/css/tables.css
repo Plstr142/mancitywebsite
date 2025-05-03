@@ -1,0 +1,375 @@
+:root {
+    --body-color: #98c5e9;
+    --container-color: hsl(212, 42%, 20%);
+    --extra-color: #182c76ff;
+    --card-data-color: hsl(21, 42%, 20%);
+    --gradient-data-color: radial-gradient(ellipse at center, #256273FF 20%, #D0FEFAEB 100%);
+    --light: #fff;
+    --extra1-color :#1E4D72FF;
+    --extra2-color :#FFB3F7FF;
+  }
+
+ body {
+    background-image: var(--gradient-data-color);
+    color: var(--white-color);
+    overflow-x: auto;        
+    background-color: var(--container-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+   
+  * {
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav {
+    width: 100%;
+    height: 6vw;
+    background: var(--container-color);
+  }
+  
+  .nav-container {
+    display: flex;
+    max-width: 90vw;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background: transparent;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  
+  .logo-mancity {
+    width: 7vw;
+    height: 5vw;
+    top: 0px;
+    left: 0px;
+    margin: 4px; 
+    position: relative;
+    object-fit: contain;
+  }
+  
+  .nav-profile {
+    display: flex;
+    flex-direction: row;  
+    max-width: 100%;
+    text-align: center;
+    /* justify-content: space-between;  */
+  }
+  
+  .nav-profile-name {
+    display: flex;
+    flex-direction: row;
+    color: var(--body-color);
+    height: 5vw
+    font-size: 1.2vw;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .nav-profile-cart {
+    display: flex;
+    flex-direction: row;
+    height: 5vw
+    font-size: 1.2vw;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    position: relative;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: var(--light);
+  }
+  
+  /* Dropdown */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--body-color);
+    box-shadow: 0px 4px 4px 2px hsl(212, 42%, 20%);
+    display: none;
+    min-width: 150px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li a {
+    display: block;
+    color: var(--container-color);
+    /* background-color: var(--container-color); */
+  }
+  
+  .dropdown-menu li a:hover {
+    color: var(--light);
+  }
+
+  
+.cartcount {
+    position: absolute;
+    top: -16px;
+    left: 11px;
+    width: 24px;
+    height: 24px;
+    background: var(--body-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--container-color);
+  }
+  
+  .fa-cart-shopping {
+    font-size: 1.4vw;
+    color: var(--body-color);
+  }
+
+  h1 {
+    text-align: center;
+    color: #D7D4D4FF;
+    margin-top: 20px;
+}
+
+
+  .table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1050px;
+    background-color: transparent;
+} 
+
+table {
+    width: 100%;
+    min-width: 800px;
+    border-collapse: collapse;
+    background-color: #D7D4D4FF;
+    border-radius: 8px;
+    /* กำหนดขอบเกินของ table บนสุด tr */
+}
+
+thead {
+    background-color: #37003c;
+    color: white;
+}
+
+thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+th,
+td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* tbody tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+} */
+
+/* tbody tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+} */
+
+tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:nth-last-child(3):hover,
+tbody tr:nth-last-child(2):hover,
+tbody tr:last-child:hover {
+    background-color: #FF6363FF;
+}
+
+/* table tbody tr:nth-child(even) {
+    background-color: transparent;
+} */
+
+tbody tr:hover {
+    /* background-color: #98c5e9; */
+    background-color: #D5E1E9FF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.005);
+    transition: all 0.3s ease;
+}
+
+tbody tr:last-child {
+    background-color: none;
+    border-radius: 10px;
+    /* กำหนดขอบเกินของ table ล่างสุด tr */
+}
+
+/* p {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+} */
+
+@media (max-width: 375px) {
+    body {
+        font-size: 14px;
+    }
+
+    table {
+        min-width: 500px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+    body {
+        font-size: 15px;
+    }
+
+    table {
+        min-width: 550px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    table {
+        min-width: 600px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-size: 17px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 834px) {
+    body {
+        font-size: 18px;
+    }
+
+    table {
+        min-width: 750px;
+    }
+}
+
+@media (min-width: 835px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    table {
+        min-width: 800px;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    table {
+        min-width: 1000px;
+    }
+}
+
+
+/* Responsive Design อันเดิม*/
+/* @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    .table-container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    th,
+    td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+
+    table {
+        min-width: 500px;
+    }
+
+    .table-container {
+        width: 100%;
+    }
+} */
