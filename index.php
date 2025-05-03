@@ -555,29 +555,26 @@ $poster_name = [
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
-
-
-
-
-
-
-
-
-
-                    <!-- <div>Football Lineupasdsasasdsaaaaaaaaaaaaaaaaaasdsadasdsadsadsadsadsadsadasdsadsa</div>
-                        <div>Football Lineupasdsasasdsaaaaaaaaaaaaaaaaaasdsadasdsadsadsadsadsadsadasdsadsa</div>
-                        <div>Football Lineupasdsasasdsaaaaaaaaaaaaaaaaaasdsadasdsadsadsadsadsadsadasdsadsa</div>
-                        <div>Football Lineupasdsasasdsaaaaaaaaaaaaaaaaaasdsadasdsadsadsadsadsadsadasdsadsa</div>
-                        <div>Football Lineupasdsasasdsaaaaaaaaaaaaaaaaaasdsadasdsadsadsadsadsadsadasdsadsa</div> -->
                 </div>
             </div>
         </div>
-        </div>
     </section>
 
+    <section class="esports-squad">
+    <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
+        
+        <div class="squad-container">
+            <a href="/esports-page" class="squad-card">
+                <img src="/assets/images/teameasportsfc/tekkz.jpg" alt="teameasportsfctekkz" class="squad-image">
+                <div class="squad-content">
+                    <h3 class="squad-title">The Man City Esports Team</h3>
+                    <p class="squad-description">EA SPORTS FC</p>
+                    <span class="explore-btn">ดูเพิ่มเติม</span>
+                </div>
+            </a>
+        </div>
+    </section>
 
     <footer class="footer-box">
         <div class="footer-sub-box">

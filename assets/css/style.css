@@ -27,10 +27,11 @@
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid
     var(--bs-list-group-border-color);
-    top: -2250px;
+    top: -2165px;
     left: 120px;
     outline: none;
     z-index: 1;
+    width: 60%;
 }
 
 :root {
@@ -1125,7 +1126,7 @@ hr.my-1-1 {
   display: flex;
   flex-direction: column;
   width: 70vw;
-  height: 80vw;
+  height: auto;
   padding: 12px;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -1175,19 +1176,32 @@ hr.my-1-1 {
   margin: 3.5px;
 }
 
+.player-position-goalkeeper {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: auto;
+}
+
 .player-position-defender {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
+  height: auto;
 }
 
 .player-position-center {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
+  height: auto;
 }
 
 .player-position-forward {
   display: flex;
   flex-direction: row;
+  max-width: 100%;
+  height: auto;
 }
 
 .player-card {
@@ -1214,6 +1228,8 @@ hr.my-1-1 {
   background-position: 0% 0%;
   margin: 5px 5px;
   color: white;
+  width: auto;
+  height: auto;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -1234,8 +1250,8 @@ hr.my-1-1 {
 
 .player-img {
   display: flex;
+  /* width: 10vw; */
   width: 10vw;
-  /* width: 100% */
   flex-direction: row;
   height: 12vw;
 }
@@ -1249,8 +1265,8 @@ hr.my-1-1 {
 .player-name {
   flex-direction: column;
   display: flex;
-  width: 100%;
-  font-size: 1.2em;
+  width: 10vw;
+  font-size: 1em;
   font-weight: bold;
   color: #37003c;
   background-color: #ECFFB575;
@@ -1261,6 +1277,7 @@ hr.my-1-1 {
   display: flex;
   flex-direction: column;
   font-size: 1em;
+  font-weight: bold;
   width: 10vw;
   color: white;
   border: 1px solid transparent;
@@ -2203,5 +2220,170 @@ hr.my-1-1 {
 
   .navbar-brand i {
     font-size: 18px;
+  }
+}
+
+
+
+
+
+
+/* Esports */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+} */
+
+.esports-squad {
+  /* margin: 0 auto; */
+  display: flex;
+  height: 60vw;
+  flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #09131BDB;
+}
+
+.squad-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.squad-card {
+  position: relative;
+  width: 60vw;
+  height: 360px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.squad-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #A5D1DCFF, #208C7AFF);
+  opacity: 0.7;
+  z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.squad-card:hover::before {
+  background: linear-gradient(22deg, #C2FEEDFF, #208C7AFF);
+  opacity: 0.8;
+}
+
+.squad-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.squad-image {
+  position: relative;
+  top: 160px;
+  left: 760px;
+  width: 14vw;
+  height: 14vw;
+  object-fit: cover;
+}
+
+.squad-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 2;
+  transform: translateY(30px);
+  opacity: 0.9;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.squad-card:hover .squad-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.squad-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--body-color);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.squad-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--body-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.explore-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.section-heading {
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 80px;
+  margin-bottom: 20px;
+  text-align: center;
+  /* background: linear-gradient(to right, #00ccff, #9900ff); */
+  background-color: var(--body-color);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-subheading {
+  text-align: center;
+  font-size: 18px;
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .squad-container {
+      grid-template-columns: 1fr;
+  }
+  
+  .section-heading {
+      font-size: 32px;
   }
 }
