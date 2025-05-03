@@ -673,10 +673,6 @@ $poster_name = [
 
 
 
-
-    <footer>
-        <!-- place footer here -->
-    </footer>
     <!-- sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Bootstrap JavaScript Libraries -->
