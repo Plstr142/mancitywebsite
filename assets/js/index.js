@@ -1024,3 +1024,17 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 /********************************************************************************************************/
+
+function checkViewport() {
+  const warning = document.querySelector(".desktop-only-warning");
+  const mq = window.matchMedia("(min-width: 320px) and (max-width: 360px)");
+
+  if (mq.matches) {
+    warning.style.display = "block";
+  } else {
+    warning.style.display = "none";
+  }
+}
+
+window.addEventListener("load", checkViewport);
+window.addEventListener("resize", checkViewport);

@@ -138,6 +138,7 @@ nav .nav-container {
   margin: 10px;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 
 .nav-profile-cart {
@@ -1173,7 +1174,7 @@ hr.my-1-1 {
 
 .topnews-container-news { 
   margin: 10px;
-  font-size: 3.2vw;
+  font-size: 5vw;
   font-weight: bold;
   color: var(--body-color);
 }
@@ -1184,14 +1185,20 @@ hr.my-1-1 {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 12px;
+  padding: 32px;
   /* text-align: center; */
 }
 
 .ourposter-container h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   font-weight: bold;
   /* text-align: center; */
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 5vw;
+    font-weight: bold;
+  }
 }
 /********************************************************************************************************/
 .timeline  {
@@ -1408,12 +1415,16 @@ hr.my-1-1 {
   padding: 15px;
   border: 2px solid transparent;
   border-radius: 10px;
-  /* background-color: #54A831FF; */
   background-color: #30AF4A;
   color: white;
   align-items: center; 
   box-shadow: 0 12px 12px #37003c;
   margin: 3.5px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    /* display: ; */
+  }
 }
 
 .player-position-goalkeeper {
@@ -1421,6 +1432,10 @@ hr.my-1-1 {
   flex-direction: row;
   max-width: 100%;
   height: auto;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: none;
+  }
 }
 
 .player-position-defender {
@@ -1428,6 +1443,10 @@ hr.my-1-1 {
   flex-direction: row;
   max-width: 100%;
   height: auto;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: none;
+  }
 }
 
 .player-position-center {
@@ -1435,6 +1454,10 @@ hr.my-1-1 {
   flex-direction: row;
   max-width: 100%;
   height: auto;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: none;
+  }
 }
 
 .player-position-forward {
@@ -1442,7 +1465,37 @@ hr.my-1-1 {
   flex-direction: row;
   max-width: 100%;
   height: auto;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    /* display: none; */
+  }
+  
 }
+
+@media (min-width: 320px) and (max-width: 360px) {
+  .desktop-only-warning {
+    display: block;
+  }
+
+  .player-position-forward {
+    display: none;
+  }
+}
+
+.desktop-only-warning {
+  display: none; 
+  color: var(--container-color);
+  background-color: #0000002A;
+  padding: 16px;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+
 
 .player-card {
   /* display: flex;
@@ -2617,13 +2670,25 @@ hr.my-1-1 {
   justify-content: center;
   align-items: center;
   background-color: #09131BDB;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    /* padding-top: 40px; */
+    height: 150vw;
+  } 
 }
 
 .squad-container {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 40px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 100%;
+    height: auto;
+  } 
 }
 
 .squad-card {
@@ -2635,6 +2700,13 @@ hr.my-1-1 {
   cursor: pointer;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-decoration: none;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+  } 
 }
 
 .squad-card::before {
@@ -2670,15 +2742,21 @@ hr.my-1-1 {
 }
 
 .squad-content {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: auto;
   padding: 30px;
   z-index: 2;
   transform: translateY(30px);
   opacity: 0.9;
   transition: transform 0.4s ease, opacity 0.4s ease;
+  text-decoration: none;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    position: relative;
+  }
 }
 
 .squad-card:hover .squad-content {
@@ -2692,6 +2770,17 @@ hr.my-1-1 {
   color: var(--body-color);
   margin-bottom: 10px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 60vw;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--body-color);
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .squad-description {
@@ -2700,6 +2789,13 @@ hr.my-1-1 {
   margin-bottom: 20px;
   color: var(--body-color);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+  
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
 }
 
 .explore-btn {
@@ -2707,18 +2803,29 @@ hr.my-1-1 {
   padding: 12px 24px;
   margin: 16px;
   background: rgba(255, 255, 255, 0.2);
-  border: 2px solid #ffffff;
-  color: #ffffff;
+  color: var(--container-color);
   border-radius: 30px;
   font-weight: 600;
-  text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(5px);
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 }
 
 .explore-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background:#208C7AFF;
   transform: scale(1.05);
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    background:#208C7AFF;
+    transform: scale(1.05);
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 }
 
 .section-heading {
@@ -2734,9 +2841,11 @@ hr.my-1-1 {
   color: transparent;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-decoration: none;
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 5vw;
     padding: 0;
   }
 }
@@ -2750,12 +2859,3 @@ hr.my-1-1 {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .squad-container {
-      grid-template-columns: 1fr;
-  }
-  
-  .section-heading {
-      font-size: 32px;
-  }
-}

@@ -555,6 +555,9 @@ $poster_name = [
                                 </div>
                             </div>
                         </div>
+                        <div class="desktop-only-warning" style="display: none">
+                            This content is available on larger screens (desktop only).
+                        </div>
                     </div>
                 </div>
             </div>
@@ -562,15 +565,15 @@ $poster_name = [
     </section>
 
     <section class="esports-squad">
-    <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
-        
+        <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
+
         <div class="squad-container">
             <a href="/esports-page" class="squad-card">
                 <img src="/assets/images/teameasportsfc/tekkz.jpg" alt="teameasportsfctekkz" class="squad-image">
                 <div class="squad-content">
                     <h3 class="squad-title">The Man City Esports Team</h3>
                     <p class="squad-description">EA SPORTS FC</p>
-                    <span class="explore-btn">ดูเพิ่มเติม</span>
+                    <span class="explore-btn">see more</span>
                 </div>
             </a>
         </div>
