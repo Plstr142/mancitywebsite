@@ -533,6 +533,17 @@ div {
   background-color: #09131BDB;
   color: var(--body-color);
   padding: 4px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    outline: none;
+    align-items: center;
+    text-align: start;
+    background-color: #09131BDB;
+    color: var(--body-color);
+    padding: 4px;
+    font-size: 4vw;
+  }
 }
 
 .form-control {
@@ -586,20 +597,36 @@ div {
   background-color: #09131BDB;
   color: var(--light);
   border: 1px solid transparent;
-  /* border-radius: 0.25rem; */
-  overflow-y: hidden;
   justify-content: start;
   align-items: center;
-  /* align-items: start; */
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 }
 
 .playeroftheweek-container {
   width: 100%;
   height: auto;
   padding: 10px;
-  /* background-color: #C6FA77E3; */
   background-color: #000000DA;
-  /* background-color: #f5f2f5; */
+}
+
+.playeroftheweek-box {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: transparent;
+
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 100%;
+    height: 45vw;
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .playeroftheweek {
@@ -619,17 +646,47 @@ div {
   background-color:#09131BDB;
 }
 
+.playeroftheweekmancity {
+  width: 30vw;
+  height: 30vw;
+  position: relative;
+  object-fit: cover;
+  margin-left: 60px;
+
+  
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 40vw;
+    height: 40vw;
+    position: relative;
+  }
+}
+
 .topic-card-gameweek {
   display: flex;
   justify-content: center;
   font-size: 1.2vw;
   font-weight: bold;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4vw;
+    font-weight: bold;
+  }
 }
 
 .text-card-gameweek {
   display: flex;
   justify-content: center;
   font-size: 1.1vw;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+  }
 }
 
 .gameofweek {
@@ -656,6 +713,12 @@ div {
 
 .mctext {
   color: var(--body-color);
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    color: var(--body-color);
+    font-size: 5vw;
+  }
 }
 
 .mc1text {
@@ -665,6 +728,13 @@ div {
   color: var(--body-color);
   font-size: 4vw;
   padding: 10px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+  }
 }
 
 hr.my-1-1 {
@@ -675,6 +745,15 @@ hr.my-1-1 {
 
 .mcbtn {
   color: var(--body-color);
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    justify-content: center;
+    color: var(--body-color);
+    font-size: 3vw;
+    margin: 5px;
+  }
 }
 
 /* .icon-up i {
@@ -697,16 +776,23 @@ hr.my-1-1 {
 }
 
 .box-search {
-  width: 35vw;
-  /* height: 12vw; */
+  width: 100%;
   padding: 14px;
-  /* top: 220px; */
-  /* left: 500px; */
   background-color: #09131BDB;
-  /* background-color: var(--body-color); */
   color: var(--light);
   border: 1px solid transparent;ar(--body-color);
   border-radius: 0.25rem;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 80%;
+    padding: 14px;
+    margin: 14px;
+    background-color: #09131BDB;
+    color: var(--light);
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
 }
 
 .footer-sub-box {
@@ -795,11 +881,20 @@ hr.my-1-1 {
 }
 
 .playermancity {
-  width: 22vw;
-  height: 22vw;
+  width: 30vw;
+  height: 30vw;
   position: relative;
   object-fit: cover;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    /* width: 22vw; */
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+    object-fit: cover;
+  }
 }
 
 .info-player-box {
@@ -820,7 +915,6 @@ hr.my-1-1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  overflow-y: hidden;
 }
 
 .container-card-list {
@@ -830,7 +924,18 @@ hr.my-1-1 {
   background-color: black;
   max-width: 100%;
   z-index: 1;
-  overflow-y: hidden;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    justify-content: center;
+    background-color: black;
+    max-width: 100%;
+    z-index: 1;
+    gap: 15px;
+  }
 }
 
 /* .container-card-list.active {
@@ -857,10 +962,9 @@ hr.my-1-1 {
   padding: 1.5rem;
   transition: 0.2s ease;
   scroll-snap-align: start;
-  clear: both;
   position: relative;
   object-fit: cover;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 .card.active {
@@ -881,7 +985,6 @@ hr.my-1-1 {
   clear: both;
   position: relative;
   object-fit: cover;
-  overflow-y: hidden;
 }
 
 .card:focus-within ~ .card,
@@ -1026,6 +1129,13 @@ hr.my-1-1 {
   display: flex;
   flex-direction: column;
   width: 35%;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
 }
 
 .ucltrophycontent { 
@@ -1037,6 +1147,21 @@ hr.my-1-1 {
   margin: 4px;
   font-size: 1.24vw;
   font-weight: bold;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    background-color: #7BC3DB25;
+    color: black;
+    border-radius: 24px;
+    border: none;
+    margin: 4px;
+    font-size: 2.4vw;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
 .ucltrophycontent:hover {
@@ -1089,11 +1214,20 @@ hr.my-1-1 {
   /* justify-content: end; */
   align-items: center;
   width: 50vw;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 14px;
+  }
 }
 
 
 .my-card1 {
-  width: 70%;
+  width: 100%;
   padding: 2em;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -1103,6 +1237,21 @@ hr.my-1-1 {
   align-items: end;
   box-shadow: 0 12px 12px rgba(0, 123, 255, 0.3);
   margin: 3.5px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 45vw;
+    height: 45vw;
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #ff2882;
+    color: white;
+    text-align: start;
+    align-items: center;
+    box-shadow: 0 12px 12px rgba(0, 123, 255, 0.3);
+  }
 }
 
 
@@ -1151,6 +1300,16 @@ hr.my-1-1 {
   font-weight: bold;
   color: #D5C3CAE3;
   text-align: center;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 2rem;
+  }
+
+  /* Pixel 7 & Galaxy S20 Ultra */
+  @media (min-width: 400px) and (max-width: 412px) {
+    font-size: 3rem;
+  }
 }
 
 .football-title {
@@ -1311,6 +1470,14 @@ hr.my-1-1 {
   /* grid-template-columns: 250px 250px; */
   grid-gap: 20px;
   justify-content: center;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+	  flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 .my-card-news {
@@ -1336,25 +1503,77 @@ hr.my-1-1 {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .news-name {
-  font-size: 100%;
+  font-size: 1.2rem;
   width: 15vw;
   font-weight: bold;
   color: var(--body-color);
   text-align: center;
   word-wrap: break-word;       
   overflow-wrap: break-word;   
-  white-space: normal;        
-
-  /* white-space: normal;     
-  word-break: normal;       
-  overflow-wrap: normal;  */
+  white-space: normal;   
+  
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 3vw;
+    width: 45vw;
+    color: var(--body-color);
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
 }
 
+.news-desc {
+  font-size: 1rem;
+  color: var(--body-color);
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.news-desc:hover {
+  font-size: 1rem;
+  color: black;
+  text-align: start;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .news-desc {
+    font-size: 2.4vw;
+    color: var(--body-color);
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  .news-desc:hover {
+    font-size: 2.4vw;
+    color: black;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+}
+
+
 .news-name:hover {
-  font-size: 100%;
+  font-size: 1.2rem;
   width: 15vw;
   font-weight: bold;
   color: var(--body-color);
@@ -1391,6 +1610,13 @@ hr.my-1-1 {
 .my-card-news img {
   width: 100%;
   cursor: pointer;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 100%;
+    height: 65vw;
+    cursor: pointer;
+  }
 }
 .my-card-news img:hover {
   width: 100%;
@@ -1770,6 +1996,21 @@ hr.my-1-1 {
   flex-direction: row;
   align-items: center;
   padding-bottom: 80px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    margin: 0 !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+   /* Pixel 7 & Galaxy S20 Ultra */
+  @media (min-width: 400px) and (max-width: 412px) {
+    margin: 0 !important;
+  }
 }
 
 .sidebar {
@@ -1780,6 +2021,16 @@ hr.my-1-1 {
   flex-direction: column;
   justify-content: end;
   align-items: end;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 60vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .productsidebar {
@@ -1824,7 +2075,20 @@ hr.my-1-1 {
   text-align: start;
   padding: 0.45rem;
   color: var(--body-color);
-  /* color: var(--body-color); */
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 100%;
+    outline: none;
+    align-items: center;
+    transition: 0.1s;
+    margin-bottom: 15px;
+    font-size: 2.4vw;
+    border-radius: 8px;
+    border: none;
+    padding: 0.45rem;
+    color: var(--body-color);
+  }
 }
 
 .sidebar-search:hover {
@@ -1841,6 +2105,21 @@ hr.my-1-1 {
   font-size: 1.2vw;
   text-decoration: none;
   text-align: end;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    background: var(--light);
+    width: 35%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    transition: 180ms;
+    font-size: 2.4vw;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .sidebar-items:hover {
@@ -2070,6 +2349,27 @@ hr.my-1-1 {
   }
 }
 
+/* Pixel 7 & Galaxy S20 Ultra */
+@media (min-width: 400px) and (max-width: 412px) {
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    font-size: 2vw;
+  }
+  .nav-menu {
+    gap: 15px;
+  }
+  .nav-profile-name {
+    font-size: 2vw;
+    padding: 10px;
+  }
+  .nav-profile-cart {
+    font-size: 2vw;
+    height: auto;
+  }
+}
+
 /* iPhone XR */ /* แก้อยู่ */
 @media (min-width: 391px) and (max-width: 414px) {
   nav {
@@ -2111,27 +2411,6 @@ hr.my-1-1 {
   .nav-profile-name, .nav-profile-cart {
     font-size: 2.8vw;
     padding: 8px;
-    height: auto;
-  }
-}
-
-/* Pixel 7 & Galaxy S20 Ultra */
-@media (min-width: 400px) and (max-width: 412px) {
-  .nav-container {
-    display: flex;
-    flex-direction: row;
-    padding: 8px;
-    font-size: 2vw;
-  }
-  .nav-menu {
-    gap: 15px;
-  }
-  .nav-profile-name {
-    font-size: 2vw;
-    padding: 10px;
-  }
-  .nav-profile-cart {
-    font-size: 2vw;
     height: auto;
   }
 }
@@ -2367,6 +2646,11 @@ hr.my-1-1 {
   color: transparent;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    padding: 0;
+  }
 }
 
 .section-subheading {
