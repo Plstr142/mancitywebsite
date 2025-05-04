@@ -60,9 +60,9 @@ $poster_name = [
                 <li class="dropdown">
                     <a href="#">Fixtures</a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Upcoming</a></li>
-                        <li><a href="#">Results</a></li>
-                        <li><a href="tables.php">Tables</a></li>
+                        <li><a class="li-upcoming" href="#">Upcoming</a></li>
+                        <!-- <li><a class="li-results" href="#">Results</a></li> -->
+                        <li><a class="li-tables" href="tables.php">Tables</a></li>
                     </ul>
                 </li>
             </ul>
@@ -70,7 +70,7 @@ $poster_name = [
             <div class="nav-profile">
                 <p class="nav-profile-name">Name Profile</p>
                 <div onclick="openCart()" style="cursor: pointer;" class="nav-profile-cart">
-                    <i class="fas fa-cart-shopping"></i>
+                    <i class="iccart-shopping fas fa-cart-shopping"></i>
                     <div id="cartcount" class="cartcount" style="display: none;">0</div>
                 </div>
             </div>

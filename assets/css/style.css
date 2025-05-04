@@ -53,8 +53,6 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
   min-height: 100vh;
   position: relative;
 }
@@ -69,9 +67,21 @@ nav {
   width: 100%;
   height: 6vw;
   background: var(--container-color);
+
+  /* Galaxy S8+ */
+  /* @media (min-width: 320px) and (max-width: 360px) {
+      width: 100vw;
+      height: 50vw;
+      background: var(--container-color);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      overflow-y: hidden;
+      position: relative;
+  } */
 }
 
-.nav-container {
+nav .nav-container {
   display: flex;
   max-width: 90vw;
   height: 100%;
@@ -80,6 +90,16 @@ nav {
   background: transparent;
   align-items: center;
   margin: 0 auto;
+
+    /* Galaxy S8+ */
+    @media (min-width: 320px) and (max-width: 360px) {
+      display: flex;
+      flex-direction: column;
+      height: 45vw;
+      padding: 8px;
+      font-size: 2vw;
+    }
+      
 }
 
 
@@ -90,6 +110,16 @@ nav {
   left: 0px;
   position: relative;
   object-fit: contain;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 14vw;
+    height: 14vw;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    object-fit: cover;
+  }  
 }
 
 .nav-profile {
@@ -120,6 +150,16 @@ nav {
   text-align: center;
   position: relative;
 }
+
+.nav-profile-cart .iccart-shopping {
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 2.4vw;
+    height: auto;
+  }
+}
+
+
 
 .nav-menu {
   list-style: none;
@@ -157,6 +197,12 @@ nav {
   box-shadow: 0px 4px 4px 2px hsl(212, 42%, 20%);
   display: none;
   min-width: 150px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    border: 1px solid transparent;
+    border-radius: 0px;
+  }
 }
 
 .dropdown:hover .dropdown-menu {
@@ -166,13 +212,31 @@ nav {
 .dropdown-menu li a {
   display: block;
   color: var(--container-color);
-  /* background-color: var(--container-color); */
+  font-size: 1rem;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: block;
+    color: var(--container-color);
+    font-size: 0.5rem;
+  }
 }
 
 .dropdown-menu li a:hover {
   color: var(--light);
 }
 
+.li-upcoming {
+  font-size: 0.5rem;
+}
+
+.li-results {
+
+}
+
+.li-tables {
+
+}
 
 .cartcount {
   position: absolute;
@@ -585,6 +649,11 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    height: 55vw;
+  }
 }
 
 .mancity-box-search {
@@ -834,8 +903,20 @@ hr.my-1-1 {
   justify-content: center;
   background-color: #f0f0f0; 
   border-radius: 50%;        
-  /* text-decoration: none; */
   transition: background-color 0.3s ease;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 32vw;
+    height: 32vw;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
 }
 
 .mancity-logo-box a {
@@ -1108,7 +1189,7 @@ hr.my-1-1 {
 }
 
 .ourposter-container h1 {
-  font-size: 3.2vw;
+  font-size: 6vw;
   font-weight: bold;
   /* text-align: center; */
 }
@@ -2060,6 +2141,12 @@ hr.my-1-1 {
   font-size: 1vw;
   font-weight: bold;
   color: black;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 45vw;
+    font-size: 3vw;
+  }
 }
 
 .sidebar-search {
@@ -2270,6 +2357,7 @@ hr.my-1-1 {
   .nav-profile-name {
     font-size: 2vw;
     padding: 10px;
+    font-weight: bold;
   }
   .nav-profile-cart {
     font-size: 2vw;
