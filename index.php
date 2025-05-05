@@ -38,9 +38,7 @@ $poster_name = [
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
 
-    <!-- main js -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -106,6 +104,8 @@ $poster_name = [
             <!-- items -->
         </div>
     </div>
+
+   
 
 
     <!-- /********************************************************************************************************/ -->
@@ -203,13 +203,12 @@ $poster_name = [
             <a onclick="searchnews(this, 'academyteam')" data-param="academyteam" class="sidebar-items">Manchester City Academy</a>
             <a onclick="searchnews(this, 'womensteam')" data-param="womensteam" class="sidebar-items">Women's Team</a>
         </div>
-
-        <div class="news">
-            <div class="news-items" id="card-news">
-                <!-- item -->
-            </div>
+    </div>
+    
+    <div class="news">
+        <div class="news-items" id="card-news">
+            <!-- item -->
         </div>
-
     </div>
 
     <!-- <div class="my-card-news">

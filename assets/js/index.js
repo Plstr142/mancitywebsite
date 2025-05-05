@@ -21,9 +21,9 @@ var productposter = [
   {
     id: 3,
     img: "assets/images/KDB.jpg",
-    name: "KDB Poster",
+    name: "Kevin De Bruyne Poster",
     price: "320",
-    description: "This is KDB Poster",
+    description: "This is Kevin De Bruyne Poster",
     type: "poster",
     param: "poster",
   },
@@ -45,15 +45,15 @@ var productposter = [
     type: "poster",
     param: "poster",
   },
-  {
-    id: 6,
-    img: "assets/images/Nasri.jpg",
-    name: "Nasri Poster",
-    price: "320",
-    description: "This is Nasri Poster",
-    type: "poster",
-    param: "poster",
-  },
+  // {
+  //   id: 6,
+  //   img: "assets/images/Nasri.jpg",
+  //   name: "Nasri Poster",
+  //   price: "320",
+  //   description: "This is Nasri Poster",
+  //   type: "poster",
+  //   param: "poster",
+  // },
 ];
 
 // [{}, {}, {}, {}, {}]; // length 5
@@ -1038,3 +1038,36 @@ function checkViewport() {
 
 window.addEventListener("load", checkViewport);
 window.addEventListener("resize", checkViewport);
+
+// scroll mouse
+const container = document.querySelector(".news-items");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+container.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+  container.style.cursor = "grabbing";
+});
+
+container.addEventListener("mouseleave", () => {
+  isDown = false;
+  container.style.cursor = "grab";
+});
+
+container.addEventListener("mouseup", () => {
+  isDown = false;
+  container.style.cursor = "grab";
+});
+
+container.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 2;
+  container.scrollLeft = scrollLeft - walk;
+});
+
+container.style.cursor = "grab";
