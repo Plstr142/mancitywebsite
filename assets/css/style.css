@@ -96,16 +96,15 @@ nav .nav-container {
   align-items: center;
   margin: 0 auto;
 
-    /* Galaxy S8+ */
-    @media (min-width: 320px) and (max-width: 360px) {
-      display: flex;
-      flex-direction: column;
-      height: 45vw;
-      padding: 8px;
-      font-size: 2vw;
-      overflow: hidden;
-    }
-      
+/* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    height: 45vw;
+    padding: 8px;
+    font-size: 2vw;
+    overflow: hidden;
+  }  
 }
 
 
@@ -260,13 +259,13 @@ nav .nav-container {
   font-size: 0.5rem;
 }
 
-.li-results {
+/* .li-results {
 
 }
 
 .li-tables {
 
-}
+} */
 
 .cartcount {
   position: absolute;
@@ -286,19 +285,6 @@ nav .nav-container {
   font-size: 1.4vw;
   color: var(--body-color);
 }
-
-/* .nav-name-profile {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  justify-content: center;
-}
-
-.nav-profile-cart {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-} */
 
 /* tables css */
 
@@ -385,14 +371,6 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-/* tbody tr:first-child td:first-child {
-  border-top-left-radius: 8px;
-} */
-
-/* tbody tr:first-child td:last-child {
-  border-top-right-radius: 8px;
-} */
-
 tbody tr:last-child td:first-child {
   border-bottom-left-radius: 8px;
 }
@@ -429,67 +407,6 @@ tbody tr:last-child {
   /* กำหนดขอบเกินของ table ล่างสุด tr */
 }
 
-/* p {
-  text-align: center;
-  color: red;
-  font-size: 1.2rem;
-} */
-
-
-
-/* Responsive Design อันเดิม*/
-/* @media (max-width: 768px) {
-  body {
-      padding: 10px;
-  }
-
-  h1 {
-      font-size: 1.5rem;
-  }
-
-  th,
-  td {
-      padding: 8px;
-      font-size: 0.9rem;
-  }
-
-  table {
-      min-width: 600px;
-  }
-
-  .table-container {
-      width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-      font-size: 1.2rem;
-  }
-
-  th,
-  td {
-      padding: 6px;
-      font-size: 0.8rem;
-  }
-
-  table {
-      min-width: 500px;
-  }
-
-  .table-container {
-      width: 100%;
-  }
-} */
-
-/* Responsive Design Club */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 /* Container ที่จัด img ให้อยู่ตรงกลางด้วย Flex */
 .club-mancity {
   display: flex;
@@ -505,64 +422,6 @@ tbody tr:last-child {
   height: 30vw;
   object-fit: cover;
 }
-/* 
-.standings-title-box {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 20px 0px 0px 0px;
-  justify-content: center;
-} */
-
-/* .standings-title {
-  color: #37003c;
-  font-size: 2.4vw;
-  font-weight: bold;
-}
-
-.standings-title-season {
-  text-align: center;
-  color: #37003c;
-  font-size: 1.5vw;
-  font-weight: bold;
-  padding: 0px 0px 6px 0px;
-} */
-
-
-/* news-container1 เก็บไว้ */
-/* .my-card1 {
-  padding: 2em;
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: #FFB1D7FF;
-  color: white;
-  text-align: center;
-} */
-
-  /* grid-template-columns: 250px 250px 250px 250px; */
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-columns: 250px 250px 250px auto; */
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px; */
-/* .news-container1 {
-  display: flex;
-  flex-direction: column;
-  border: 4px solid blue;
-  justify-content: center;
-} */
-/* news-container1 เก็บไว้ */
-
-
-
-/* .club-topic-box {
-  display: flex;
-  flex-direction: row;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 20px 0px 0px 0px;
-  justify-content: center;
-} */
 
 .club-text-box {
   text-align: center;
@@ -698,29 +557,15 @@ div {
   border: 1px solid transparent;
   justify-content: start;
   align-items: center;
+}
 
-  /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 360px) {
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .mancity-box-search {
     display: flex;
     flex-direction: column;
     padding: 0;
   }
-}
-
-@media (min-width: 376px) and (max-width: 390px) {
- .mancity-box-search {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  max-width: 100%;
-  padding: 40px;
-  height: auto;
-  background-color: #09131BDB;
-  color: var(--light);
-  border: 1px solid transparent;
-  justify-content: start;
-  align-items: center;
- }
 }
 
 /* iPhone 14 Pro Max */
@@ -1406,13 +1251,6 @@ hr.my-1-1 {
 .news-container1 {
   display: flex;
   flex-direction: column;
-  /* border: 4px solid blue; */
-  /* grid-template-columns: 250px 250px 250px 250px; */
-  /* grid-template-columns: repeat(2, 1fr); */
-  /* grid-template-columns: 250px 250px 250px auto; */
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 20px; */
-  /* justify-content: end; */
   align-items: center;
   width: 50vw;
 
@@ -1502,16 +1340,19 @@ hr.my-1-1 {
   color: #D5C3CAE3;
   text-align: center;
 
-  /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 360px) {
-    font-size: 2rem;
-  }
-
-  /* Pixel 7 & Galaxy S20 Ultra */
-  @media (min-width: 400px) and (max-width: 412px) {
-    font-size: 3rem;
+  /* iPhone 14 Pro Max  */
+  @media (min-width: 415px) and (max-width: 430px) {
+    font-size: 3vw;
   }
 }
+
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .gameofweek-topic {
+    font-size: 2rem;
+  }
+}
+
 
 .football-title {
   font-size: 2.9vw;
@@ -2350,8 +2191,9 @@ hr.my-1-1 {
   align-items: center;
   padding-bottom: 80px;
 }
+
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+/* @media (min-width: 415px) and (max-width: 430px) {
   .news-container {
     width: 100%;
     display: flex;
@@ -2359,7 +2201,7 @@ hr.my-1-1 {
     align-items: center;
     justify-content: center;
   }
-}
+} */
 
 /* Galaxy S8+ */
 @media (min-width: 320px) and (max-width: 360px) {
@@ -2373,11 +2215,11 @@ hr.my-1-1 {
 }
 
 /* Pixel 7 & Galaxy S20 Ultra */
-@media (min-width: 400px) and (max-width: 412px) {
+/* @media (min-width: 400px) and (max-width: 412px) {
   .news-container {
     margin: 0 !important;
   }
-}
+} */
 
 
 
@@ -2558,6 +2400,16 @@ hr.my-1-1 {
 /********************************************************************************/
 
 
+
+
+
+
+
+
+
+
+
+
 /* @media only screen and (max-width: 390px) {
 }
 
@@ -2578,6 +2430,17 @@ hr.my-1-1 {
 
 @media only screen and (max-width: 1200px) {
 } */
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media table */
@@ -2679,12 +2542,27 @@ hr.my-1-1 {
     max-width: 960px;
   }
 }
+/* media table */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media navbar */
 
 
 /* iPhone SE */
-@media (min-width: 360px) and (max-width: 375px) {
+/* @media (min-width: 360px) and (max-width: 375px) {
   nav {
     width: 100vw;
     height: auto;
@@ -2713,10 +2591,10 @@ hr.my-1-1 {
     font-size: 2vw;
     height: auto;
   }
-}
+} */
 
 /* iPhone 12 PRO */ /* แก้อยู่ */
-@media (min-width: 376px) and (max-width: 390px) {
+/* @media (min-width: 376px) and (max-width: 390px) {
   nav {
     width: 100vw;
     height: 15vw;
@@ -2753,10 +2631,10 @@ hr.my-1-1 {
     padding: 10px;
     height: auto;
   }
-}
+} */
 
 /* Pixel 7 & Galaxy S20 Ultra */
-@media (min-width: 400px) and (max-width: 412px) {
+/* @media (min-width: 400px) and (max-width: 412px) {
   .nav-container {
     display: flex;
     flex-direction: row;
@@ -2774,10 +2652,10 @@ hr.my-1-1 {
     font-size: 2vw;
     height: auto;
   }
-}
+} */
 
 /* iPhone XR */ /* แก้อยู่ */
-@media (min-width: 391px) and (max-width: 414px) {
+/* @media (min-width: 391px) and (max-width: 414px) {
   nav {
     width: 100vw;
     height: auto;
@@ -2819,10 +2697,10 @@ hr.my-1-1 {
     padding: 8px;
     height: auto;
   }
-}
+} */
 
 /* iPhone 14 Pro Max */ /* แก้อยู่ */
-@media (min-width: 415px) and (max-width: 430px) {
+/* @media (min-width: 415px) and (max-width: 430px) {
   nav {
     display: flex;
     flex-direction: row;
@@ -2861,10 +2739,10 @@ hr.my-1-1 {
     height: auto;
     white-space: nowrap;
   }
-}
+} */
 
 /* iPad Mini (6th) */
-@media (min-width: 700px) and (max-width: 768px) {
+/* @media (min-width: 700px) and (max-width: 768px) {
   .nav-container {
     padding: 15px;
   }
@@ -2877,36 +2755,36 @@ hr.my-1-1 {
   .nav-profile-cart {
     font-size: 1.8vw;
   }
-}
+} */
 
 /* iPad Air (5th), iPad Pro 11" */
-@media (min-width: 769px) and (max-width: 834px) {
+/* @media (min-width: 769px) and (max-width: 834px) {
   .nav-profile-name,
   .nav-profile-cart {
     font-size: 1.5vw;
   }
-}
+} */
 
 /* iPad Pro 12.9" */
-@media (min-width: 835px) and (max-width: 1024px) {
+/* @media (min-width: 835px) and (max-width: 1024px) {
   .nav-profile-name,
   .nav-profile-cart {
     font-size: 1.3vw;
   }
-}
+} */
 
 
 /* footer */
-@media (max-width: 600px) {
-  .navbar-brand {
+/* @media (max-width: 600px) {
+  .navbar-brand-footer {
     width: 32px;
     height: 32px;
   }
 
-  .navbar-brand i {
+  .navbar-brand-footer i {
     font-size: 18px;
   }
-}
+} */
 
 
 
@@ -2927,7 +2805,6 @@ hr.my-1-1 {
 } */
 
 .esports-squad {
-  /* margin: 0 auto; */
   display: flex;
   height: 60vw;
   flex-direction: column;
@@ -2936,23 +2813,29 @@ hr.my-1-1 {
   align-items: center;
   background-color: #09131BDB;
 
+  
   /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 360px) {
-    /* padding-top: 40px; */
-    height: 150vw;
-  } 
+  @media (min-width: 320px) and (max-width: 400px) {
+    height: 100%;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 430px) {
+    height: 100%;
+  }
 }
 
 .squad-container {
   display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   gap: 30px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     max-width: 100%;
     height: auto;
+    padding: 20px;
   } 
 }
 
@@ -3093,11 +2976,24 @@ hr.my-1-1 {
   }
 }
 
+.section-heading-container {
+  width: 100%;
+  background-color: #09131BDB;
+  /* padding: 10px; */
+}
+
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .section-heading-container {
+    /* padding: 10px; */
+  }
+}
+
 .section-heading {
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: 800;
   padding: 80px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: center;
   /* background: linear-gradient(to right, #00ccff, #9900ff); */
   background-color: var(--body-color);
@@ -3107,11 +3003,20 @@ hr.my-1-1 {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
+}
 
-  /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 360px) {
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .section-heading {
     font-size: 5vw;
-    padding: 0;
+    /* padding: 0; */
+  }
+}
+
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 430px) {
+  .section-heading {
+    font-size: 5vw;
   }
 }
 

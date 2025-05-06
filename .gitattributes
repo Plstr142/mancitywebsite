@@ -1,2 +1,9 @@
-# Auto detect text files and perform LF normalization
+# Ensure all files use consistent line endings
 * text=auto
+
+# Force specific types to LF (ใช้บน Server/Unix จะไม่มีปัญหา)
+*.js     text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+*.php    text eol=lf
+*.sh     text eol=lf

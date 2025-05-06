@@ -563,9 +563,11 @@ $poster_name = [
             </div>
         </div>
     </section>
-
-    <section class="esports-squad">
+    
+    <div class="section-heading-container">
         <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
+    </div>
+    <section class="esports-squad">
 
         <div class="squad-container">
             <a href="/esports-page" class="squad-card">
@@ -593,16 +595,16 @@ $poster_name = [
                 <a class="logo-mancity-box" href="index.php">
                     <img class="logo-mancity-footer" src="assets/images/logo/mancity.jpg" alt="mancitylogo">
                 </a>
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand-footer" href="index.php">
                     <i class="icon-ig ri-instagram-fill"></i>
                 </a>
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand-footer" href="index.php">
                     <i class="icon-facebook ri-facebook-circle-fill"></i>
                 </a>
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand-footer" href="index.php">
                     <i class="icon-youtube ri-youtube-fill"></i>
                 </a>
-                <a class="navbar-brand" href="index.php">
+                <a class="navbar-brand-footer" href="index.php">
                     <i class="icon-twitter-x ri-twitter-x-fill"></i>
                 </a>
             </div>
