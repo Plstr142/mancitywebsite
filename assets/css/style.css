@@ -88,6 +88,20 @@ nav {
 } 
 
 
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 431px){
+  nav {
+    width: 100vw;
+    height: auto !important;
+    background: var(--container-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+  }  
+}
+
+
 nav .nav-container {
   display: flex;
   max-width: 90vw;
@@ -97,18 +111,36 @@ nav .nav-container {
   background: transparent;
   align-items: center;
   margin: 0 auto;
+}
 
 /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 360px) {
+  nav .nav-container {
     display: flex;
     flex-direction: column;
+    /* height: 100%; */
+    width: 100%;
     height: 45vw;
     padding: 8px;
     font-size: 2vw;
-    overflow: hidden;
-  }  
-}
+    /* overflow: hidden; */
+  }
+}  
 
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 431px) {
+  nav .nav-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45vw;
+    background: transparent;
+    align-items: center;
+    padding: 8px;
+    font-size: 2vw;
+    /* overflow: hidden; */
+  }
+}  
 
 .logo-mancity-nav {
   width: 7vw;
@@ -120,6 +152,16 @@ nav .nav-container {
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
+    width: 16vw;
+    height: 16vw;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    object-fit: cover;
+  }  
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
     width: 16vw;
     height: 16vw;
     top: 0px;
@@ -143,6 +185,13 @@ nav .nav-container {
     padding: 10px;
     font-weight: bold;
   }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    font-size: 4vw;
+    padding: 10px;
+    font-weight: bold;
+  }  
 }
 
 .nav-profile-name {
@@ -171,6 +220,12 @@ nav .nav-container {
 .nav-profile-cart .iccart-shopping {
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 4vw;
+    height: auto;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
     font-size: 4vw;
     height: auto;
   }
@@ -205,6 +260,18 @@ nav .nav-container {
 
 /* Galaxy S8+ */
 @media (min-width: 320px) and (max-width: 360px) {
+  .nav-menu a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+}
+
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 431px) {
   .nav-menu a {
     text-decoration: none;
     color: var(--body-color);
@@ -555,7 +622,11 @@ div {
   
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    height: 55vw;
+    height: 60vw;
+  }
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    height: 60vw;
   }
 }
 
@@ -583,7 +654,7 @@ div {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .mancity-box-search {
     display: flex;
     flex-direction: column;
@@ -649,7 +720,7 @@ div {
   object-fit: cover;
   margin-left: 60px;
 
-  
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     max-width: 40vw;
     height: 40vw;
@@ -855,6 +926,19 @@ hr.my-1-1 {
   }
 }
 
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 431px) {
+  .navbar-brand {
+      margin: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      /* padding: 10px; */
+  }
+}
+
 .mancity-logo-box a {
   text-decoration: none;
   color: white;
@@ -963,16 +1047,10 @@ hr.my-1-1 {
   }
 
   /* iPhone 14 Pro Max */
-  @media (min-width: 415px) and (max-width: 430px) {
+  @media (min-width: 415px) and (max-width: 431px) {
     flex-direction: column;
     gap: 15px;
   }
-}
-
-/* Galaxy S8+ */
-@media (min-width: 320px) and (max-width: 360px) {
-  flex-direction: column;
-  gap: 15px;
 }
 
 
@@ -1363,11 +1441,6 @@ hr.my-1-1 {
   font-weight: bold;
   color: #D5C3CAE3;
   text-align: center;
-
-  /* iPhone 14 Pro Max  */
-  @media (min-width: 415px) and (max-width: 430px) {
-    font-size: 3vw;
-  }
 }
 
 /* Galaxy S8+ */
@@ -1377,6 +1450,12 @@ hr.my-1-1 {
   }
 }
 
+/* iPhone 14 Pro Max  */
+@media (min-width: 415px) and (max-width: 431px) {
+  .gameofweek-topic {
+    font-size: 2.5rem;
+  }
+}
 
 .football-title {
   font-size: 2.9vw;
@@ -1411,6 +1490,7 @@ hr.my-1-1 {
   max-width: 100%;
   height: auto;
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     display: none;
   }
@@ -1422,6 +1502,7 @@ hr.my-1-1 {
   max-width: 100%;
   height: auto;
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     display: none;
   }
@@ -1433,6 +1514,7 @@ hr.my-1-1 {
   max-width: 100%;
   height: auto;
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     display: none;
   }
@@ -1444,12 +1526,14 @@ hr.my-1-1 {
   max-width: 100%;
   height: auto;
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     /* display: none; */
   }
   
 }
 
+/* Galaxy S8+ */
 @media (min-width: 320px) and (max-width: 360px) {
   .desktop-only-warning {
     display: block;
@@ -1627,7 +1711,7 @@ hr.my-1-1 {
 }
 
  /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .news-items {
     display: flex;
     flex-direction: column;
@@ -1693,7 +1777,7 @@ hr.my-1-1 {
 
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .card-news-name {
     display: flex;
     flex-direction: column;
@@ -1728,7 +1812,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .news-name {
     font-size: 1.2rem;
     width: auto;
@@ -1784,7 +1868,7 @@ hr.my-1-1 {
   }
 
   /* iPhone 14 Pro Max */
-  @media (min-width: 415px) and (max-width: 430px) {
+  @media (min-width: 415px) and (max-width: 431px) {
     width: auto;
   }
 }
@@ -1822,7 +1906,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .my-card-news img{
     width: 100%;
     height: 65vw;
@@ -2263,7 +2347,7 @@ hr.my-1-1 {
 
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {  
+@media (min-width: 415px) and (max-width: 431px) {  
   .sidebar {
     width: 60vw;
     padding: 10px;
@@ -2307,6 +2391,12 @@ hr.my-1-1 {
     width: 45vw;
     font-size: 3vw;
   }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    width: 45vw;
+    font-size: 3vw;
+  }
 }
 
 .sidebar-search {
@@ -2341,7 +2431,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .sidebar-search {
     width: 100%;
     outline: none;
@@ -2390,7 +2480,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .sidebar-items {
      background: var(--light);
   width: 35%;
@@ -2515,7 +2605,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .table-container {
     padding: 16px;
     width: 90%;
@@ -2808,6 +2898,7 @@ hr.my-1-1 {
   color: white;
 }
 
+/* Galaxy S8+ */
 @media (min-width: 320px) and (max-width: 360px) {
   .navbar-brand-footer {
     width: 32px;
@@ -2856,12 +2947,12 @@ hr.my-1-1 {
 
   
   /* Galaxy S8+ */
-  @media (min-width: 320px) and (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 360px) {
     height: 100%;
   }
 
   /* iPhone 14 Pro Max */
-  @media (min-width: 415px) and (max-width: 430px) {
+  @media (min-width: 415px) and (max-width: 431px) {
     height: 100%;
   }
 }
@@ -2891,6 +2982,7 @@ hr.my-1-1 {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   text-decoration: none;
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     width: 100%;
     height: auto;
@@ -3009,6 +3101,7 @@ hr.my-1-1 {
   background:#208C7AFF;
   transform: scale(1.05);
 
+  /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     background:#208C7AFF;
     transform: scale(1.05);
@@ -3055,7 +3148,7 @@ hr.my-1-1 {
 }
 
 /* iPhone 14 Pro Max */
-@media (min-width: 415px) and (max-width: 430px) {
+@media (min-width: 415px) and (max-width: 431px) {
   .section-heading {
     font-size: 5vw;
   }
