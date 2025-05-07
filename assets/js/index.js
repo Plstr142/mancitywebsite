@@ -1027,7 +1027,9 @@ function backToTop() {
 
 function checkViewport() {
   const warning = document.querySelector(".desktop-only-warning");
-  const mq = window.matchMedia("(min-width: 320px) and (max-width: 360px)");
+  const mq = window.matchMedia(
+    "(min-width: 320px) and (max-width: 360px), (min-width: 415px) and (max-width: 431px)"
+  );
 
   if (mq.matches) {
     warning.style.display = "block";
