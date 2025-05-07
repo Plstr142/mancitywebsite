@@ -573,7 +573,7 @@ $poster_name = [
                 <div class="squad-content">
                     <h3 class="squad-title">The Man City Esports Team</h3>
                     <p class="squad-description">EA SPORTS FC</p>
-                    <a href="/esports-page">
+                    <a href="esports-page.php">
                         <button class="explore-btn">
                             <div class="text-see-more">see more</div>
                         </button>

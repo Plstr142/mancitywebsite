@@ -1799,7 +1799,7 @@ hr.my-1-1 {
   padding: 16px;
   margin-top: 12px;
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 2vw;
   border-radius: 6px;
   font-weight: bold;
   max-width: 100%;
@@ -1809,6 +1809,7 @@ hr.my-1-1 {
 @media (min-width: 320px) and (max-width: 360px) {
   .desktop-only-warning {
     display: block;
+    font-size: 4vw;
   }
 
   .player-position-forward {
@@ -1832,6 +1833,7 @@ hr.my-1-1 {
 @media (min-width: 415px) and (max-width: 431px) {
   .desktop-only-warning {
     display: block;
+    font-size: 4vw;
   }
 
   .player-position-forward {
