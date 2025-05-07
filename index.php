@@ -568,17 +568,18 @@ $poster_name = [
         <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
     </div>
     <section class="esports-squad">
-
-        <div class="squad-container">
-            <a href="/esports-page" class="squad-card">
-                <img src="/assets/images/teameasportsfc/tekkz.jpg" alt="teameasportsfctekkz" class="squad-image">
+            <div class="squad-container">
+                <img src="assets/images/teameasportsfc/tekkz.jpg" alt="tekkz" class="squad-image">
                 <div class="squad-content">
                     <h3 class="squad-title">The Man City Esports Team</h3>
                     <p class="squad-description">EA SPORTS FC</p>
-                    <span class="explore-btn">see more</span>
+                    <a href="/esports-page">
+                        <button class="explore-btn">
+                            <div class="text-see-more">see more</div>
+                        </button>
+                    </a>
                 </div>
-            </a>
-        </div>
+            </div>     
     </section>
 
     <footer class="footer-box">
