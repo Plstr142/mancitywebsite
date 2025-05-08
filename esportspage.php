@@ -72,7 +72,7 @@
                     <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info Esport Captain</p>
+                    <p class="squad-card-name">Info Esport Coach</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
                         <p>Date of birth: 2002-03-06</p>
@@ -173,20 +173,87 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- sdsadasdsasadsds -->
-        <div class="squad-row">
-            <div class="squad-card">Card 4</div>
-            <div class="squad-card">Card 5</div>
-            <div class="squad-card">Card 6</div>
+    <!-- nationality -->
+    <div class="squad-row-nationality">
+        <div class="squad-card-nationality">
+            <div class="nationality-box">
+                <div class="text-nationality">
+                    Nationality
+                    <div class="nationality-link-box">
+                        <a class="nationality-link-box" href="#">
+                            <img class="flag-icon" src="assets/images/flags/gb-eng.jpg" alt="england">
+                        </a>
+                        <a class="nationality-link-box" href="#">
+                            <img class="flag-icon" src="assets/images/flags/es.jpg" alt="spain">
+                        </a>
+                        <a class="nationality-link-box" href="#">
+                            <img class="flag-icon" src="assets/images/flags/us.jpg" alt="united states">
+                        </a>
+                        <a class="nationality-link-box" href="#">
+                            <img class="flag-icon" src="assets/images/flags/ar.jpg" alt="argentina">
+                        </a>
+                    </div>
+                </div>          
+            </div>
+          
+            <!-- asdsads -->
         </div>
     </div>
+
+    <!-- follow us -->
+    <div class="squad-row-follow-us">
+        <div class="squad-card-follow-us">
+            <div class="follow-us-box">
+                <p>FOLLOW US</p>
+            </div>
+            <div class="follow-us-link-box">
+                <a class="esports-link-box" href="https://www.instagram.com/mancityesports/#" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-instagram ri-instagram-fill"></i>
+                </a>
+                <a class="esports-link-box" href="https://www.twitch.tv/mancity" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-twitch ri-twitch-fill"></i>
+                </a>
+                <a class="esports-link-box" href="https://www.youtube.com/playlist?list=PLp_A7BZlpSOdNMXreed__K2w_3-xUYfnK" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-youtube ri-youtube-fill"></i>
+                </a>
+                <a class="esports-link-box" href="https://www.tiktok.com/@mancity" target="_blank" rel="noopener noreferrer">
+                    <i class="icon-tiktok ri-tiktok-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="mancity-logo-box">
+        <a class="logo-mancity-box" href="index.php">
+            <img class="logo-mancity-footer" src="assets/images/logo/mancity.jpg" alt="mancitylogo">
+        </a>
+        <a class="navbar-brand-footer" href="https://www.instagram.com/mancity/" target="_blank" rel="noopener noreferrer">
+            <i class="icon-ig ri-instagram-fill"></i>
+        </a>
+        <a class="navbar-brand-footer" href="https://www.facebook.com/mancity/?locale=th_TH" target="_blank" rel="noopener noreferrer">
+            <i class="icon-facebook ri-facebook-circle-fill"></i>
+        </a>
+        <a class="navbar-brand-footer" href="https://www.youtube.com/@mancity" target="_blank" rel="noopener noreferrer">
+            <i class="icon-youtube ri-youtube-fill"></i>
+        </a>
+        <a class="navbar-brand-footer" href="https://x.com/mancity" target="_blank" rel="noopener noreferrer">
+            <i class="icon-twitter-x ri-twitter-x-fill"></i>
+        </a>
+    </div> -->
 
     <div class="battle-deck">
         <div class="player-card">Player 1</div>
         <div class="player-card">Player 2</div>
         <div class="player-card">Player 3</div>
     </div>
+
+
+
+
+
+    <?php include 'footer.php'; ?>
 
 
 

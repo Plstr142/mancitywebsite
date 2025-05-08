@@ -105,7 +105,7 @@ $poster_name = [
         </div>
     </div>
 
-   
+
 
 
     <!-- /********************************************************************************************************/ -->
@@ -204,7 +204,7 @@ $poster_name = [
             <a onclick="searchnews(this, 'womensteam')" data-param="womensteam" class="sidebar-items">Women's Team</a>
         </div>
     </div>
-    
+
     <div class="news">
         <div class="news-items" id="card-news">
             <!-- item -->
@@ -563,23 +563,23 @@ $poster_name = [
             </div>
         </div>
     </section>
-    
+
     <div class="section-heading-container">
         <h2 class="section-heading">Our Manchester City E-Sports Squad </h2>
     </div>
     <section class="esports-squad">
-            <div class="squad-container">
-                <img src="assets/images/teameasportsfc/tekkz.jpg" alt="tekkz" class="squad-image">
-                <div class="squad-content">
-                    <h3 class="squad-title">The Man City Esports Team</h3>
-                    <p class="squad-description">EA SPORTS FC</p>
-                    <a href="esports-page.php">
-                        <button class="explore-btn">
-                            <div class="text-see-more">see more</div>
-                        </button>
-                    </a>
-                </div>
-            </div>     
+        <div class="squad-container">
+            <img src="assets/images/teameasportsfc/tekkz.jpg" alt="tekkz" class="squad-image">
+            <div class="squad-content">
+                <h3 class="squad-title">The Man City Esports Team</h3>
+                <p class="squad-description">EA SPORTS FC</p>
+                <a href="esports-page.php">
+                    <button class="explore-btn">
+                        <div class="text-see-more">see more</div>
+                    </button>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer class="footer-box">
@@ -596,16 +596,16 @@ $poster_name = [
                 <a class="logo-mancity-box" href="index.php">
                     <img class="logo-mancity-footer" src="assets/images/logo/mancity.jpg" alt="mancitylogo">
                 </a>
-                <a class="navbar-brand-footer" href="index.php">
+                <a class="navbar-brand-footer" href="https://www.instagram.com/mancity/" target="_blank" rel="noopener noreferrer">
                     <i class="icon-ig ri-instagram-fill"></i>
                 </a>
-                <a class="navbar-brand-footer" href="index.php">
+                <a class="navbar-brand-footer" href="https://www.facebook.com/mancity/?locale=th_TH" target="_blank" rel="noopener noreferrer">
                     <i class="icon-facebook ri-facebook-circle-fill"></i>
                 </a>
-                <a class="navbar-brand-footer" href="index.php">
+                <a class="navbar-brand-footer" href="https://www.youtube.com/@mancity" target="_blank" rel="noopener noreferrer">
                     <i class="icon-youtube ri-youtube-fill"></i>
                 </a>
-                <a class="navbar-brand-footer" href="index.php">
+                <a class="navbar-brand-footer" href="https://x.com/mancity" target="_blank" rel="noopener noreferrer">
                     <i class="icon-twitter-x ri-twitter-x-fill"></i>
                 </a>
             </div>
