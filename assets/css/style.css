@@ -3697,8 +3697,9 @@ hr.my-1-1 {
   flex-direction: column;
   gap: 40px;
   align-items: center;
+  height: 120vw;
   width: 100vw;
-  height: 100vw;
+  padding: 40px;
 }
 
 .squad-row {

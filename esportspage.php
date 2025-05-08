@@ -72,7 +72,7 @@
                     <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Captain</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
                         <p>Date of birth: 2002-03-06</p>
@@ -84,34 +84,34 @@
                 </div>
             </div>
             <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
+                <p class="squad-card-title">Faraaz</p>
                 <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                    <img class="esports-image" src="assets/images/teameasportsfc/fg.jpg" alt="fg">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Player</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
-                        <p>Date of birth: 2002-03-06</p>
-                        <p>Location : Tenerife, Spain</p>
-                        <p>Nationality : Spain</p>
+                        <p>Date of birth: 1994-05-04</p>
+                        <p>Location : Manchester, England</p>
+                        <p>Nationality : England</p>
                         <p>Game: EA FC</p>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
+                <p class="squad-card-title">Kacee</p>
                 <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                    <img class="esports-image" src="assets/images/teameasportsfc/kacee.jpg" alt="kacee">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Player</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
-                        <p>Date of birth: 2002-03-06</p>
-                        <p>Location : Tenerife, Spain</p>
-                        <p>Nationality : Spain</p>
+                        <p>Date of birth: 1993-02-11</p>
+                        <p>Location : Chicago, United States of America</p>
+                        <p>Nationality : United States of America</p>
                         <p>Game: EA FC</p>
                         </p>
                     </div>
@@ -122,49 +122,49 @@
         <!-- Row 2 -->
         <div class="squad-row">
             <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
+                <p class="squad-card-title">Matias Bonanno</p>
                 <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                    <img class="esports-image" src="assets/images/teameasportsfc/mati.jpg" alt="matias">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Player</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
-                        <p>Date of birth: 2002-03-06</p>
-                        <p>Location : Tenerife, Spain</p>
-                        <p>Nationality : Spain</p>
+                        <p>Date of birth: 2002-11-12</p>
+                        <p>Location : Rosario, Argentina</p>
+                        <p>Nationality : Argentina</p>
                         <p>Game: EA FC</p>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
+                <p class="squad-card-title">Donovan ‘Tekkz’ Hunt</p>
                 <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                    <img class="esports-image" src="assets/images/teameasportsfc/tekkz.jpg" alt="tekkz">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Player</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
-                        <p>Date of birth: 2002-03-06</p>
-                        <p>Location : Tenerife, Spain</p>
-                        <p>Nationality : Spain</p>
+                        <p>Date of birth: 2001-06-02</p>
+                        <p>Location : Torquay, England</p>
+                        <p>Nationality : England</p>
                         <p>Game: EA FC</p>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
+                <p class="squad-card-title">Ander "Neat" Tobal</p>
                 <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                    <img class="esports-image" src="assets/images/teameasportsfc/neat-hs.jpg" alt="neat-hs">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Info</p>
+                    <p class="squad-card-name">Info Esport Player</p>
                     <div class="squad-card-info-box">
                         <p class="squad-card-info">
-                        <p>Date of birth: 2002-03-06</p>
+                        <p>Date of birth: 2004-01-27</p>
                         <p>Location : Tenerife, Spain</p>
                         <p>Nationality : Spain</p>
                         <p>Game: EA FC</p>
