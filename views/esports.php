@@ -2,13 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>esportspage</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standings & Teams</title>
     <!-- Bootstrap CSS v5.2.1 -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -25,19 +21,16 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
 
+    <!-- main js -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/table.css"> -->
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-
 <body>
-
-    <!-- ใส่ controller !!!!! -->
-    <!-- ?????? -->
-    <!-- ใส่ controller !!!!! -->
-
+    <!--  include 'index.php';  -->
     <?php
     ob_start();
     include 'index.php';
@@ -62,65 +55,81 @@
         // แสดงผล <nav> หลังจากแก้ไขลิงก์
         echo $dom->saveHTML($nav);
     }
+
+    // $navs = $dom->getElementsByTagName('nav');
+    // foreach ($navs as $nav) {
+    //     echo $dom->saveHTML($nav);
+    // }
+
+
     ?>
 
-    <div class="squad-arena">
-        <!-- Row 1 -->
-        <div class="squad-row">
-            <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
-                <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
-                </div>
-                <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
-                    <p class="squad-card-info">
-                        Info
-                        Date of birth
-                        2002-03-06
-                        Location
-                        Tenerife, Spain
-                        Nationality
-                        Spain
-                        Spain
-                        Game
-                        EA FC </p>
-                </div>
-            </div>
-            <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
-                <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
-                </div>
-                <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
-                </div>
-            </div>
-            <div class="squad-card">
-                <p class="squad-card-title">Edu Castellano</p>
-                <div class="esports-box-image">
-                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
-                </div>
-                <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
-                </div>
-            </div>
-            <!-- <div class="squad-card">Card 2</div>
-            <div class="squad-card">Card 3</div> -->
-        </div>
 
-        <!-- Row 2 -->
-        <div class="squad-row">
-            <div class="squad-card">Card 4</div>
-            <div class="squad-card">Card 5</div>
-            <div class="squad-card">Card 6</div>
+
+
+    <!-- modalDescproduct -->
+    <div class="modal" id="modalDescproduct" style="display: none;">
+        <div onclick="CloseModal()" class="modal-bg">
+        </div>
+        <div class="modal-page">
+            <p class="topic-news">Manchester City Poster</p>
+            <br>
+
+            <div class="cartlist-spacer">
+                <div class="cartlist">
+                    <div class="cartlist-items">
+                        <div class="cartlist-left">
+                            <div class="cartlist-img">
+                                <img id="mdd-img" src="assets/images/DavidSilva.jpg" alt="DavidSilva">
+                            </div>
+                        </div>
+                        <div class="cartlist-center">
+                            <div class="cartlist-detail">
+                                <p id="mdd-name" class="product-name">Product Name</p>
+                                <p id="mdd-price" class="product-price">500 THB</p>
+                            </div>
+                        </div>
+                        <div class="cartlist-right">
+                            <p class="btnc">-</p>
+                            <p class="btnq">1</p>
+                            <p class="btnc">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="btn-control">
+                <div class="btn-group-submit">
+                    <button onclick="AddtoCart()" class="btn btn-submit">Add to Cart</button>
+                </div>
+                <div class="btn-group-out">
+                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="battle-deck">
-        <div class="player-card">Player 1</div>
-        <div class="player-card">Player 2</div>
-        <div class="player-card">Player 3</div>
+    <div class="modal" id="modalCart" style="display: none;">
+        <div onclick="CloseModal()" class="modal-bg">
+        </div>
+        <div class="modal-page">
+            <p class="topic-news">My Cart</p>
+            <br>
+            <div class="cartlist-spacer">
+                <div id="mycart" class="cartlist">
+                    <!-- cartlist item -->
+                </div>
+            </div>
+            <br>
+            <div class="btn-control">
+                <div class="btn-group-submit">
+                    <button class="btn btn-submit">Checkout</button>
+                </div>
+                <div class="btn-group-out">
+                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 

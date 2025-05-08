@@ -126,7 +126,6 @@
                             <tr>
                                 <td><?= htmlspecialchars($standing['standing_id']) ?></td>
                                 <td><?= htmlspecialchars($standing['team_name']) ?></td>
-                                <!-- <td>< htmlspecialchars($standing['season']) </td> -->
                                 <td><?= htmlspecialchars($standing['match_played']) ?></td>
                                 <td><?= htmlspecialchars($standing['win']) ?></td>
                                 <td><?= htmlspecialchars($standing['draw']) ?></td>
@@ -136,9 +135,6 @@
                                 <td><?= htmlspecialchars($standing['goal_difference']) ?></td>
                                 <td><?= htmlspecialchars($standing['points']) ?></td>
                                 <td><?= htmlspecialchars($standing['form']) ?></td>
-                                <!-- <td> htmlspecialchars($standing['team_id']) </td> -->
-                                <!-- <td> htmlspecialchars($standing['created_at'])</td> -->
-                                <!-- <td> htmlspecialchars($standing['updated_at'])</td> -->
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

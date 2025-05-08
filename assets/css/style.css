@@ -3420,6 +3420,11 @@ hr.my-1-1 {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
+.squad-card-title {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
 .squad-image {
   position: relative;
   padding: 10px;
@@ -3664,7 +3669,7 @@ hr.my-1-1 {
 
 
 /* esportspage */
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -3684,4 +3689,146 @@ hr.my-1-1 {
   text-align: center;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+} */
+
+
+.squad-arena {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  width: 100vw;
+  height: 60vw;
+}
+
+.squad-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.squad-card {
+  background: linear-gradient(135deg, #1a1d3a, #2e335a);
+  color: #00ffe7;
+  /* padding: 30px 20px; */
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid #00ffe7;
+  box-shadow: 
+    0 0 10px rgba(0, 255, 230, 0.3),
+    0 0 20px rgba(0, 255, 230, 0.2) inset;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  /* z-index: 1; */
+}
+
+.squad-card-box-name {
+  display: flex;
+  flex-direction: row;
+  width: 12vw;
+  height: 4vw;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+.squad-card-name {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+
+
+.squad-card::before {
+  /* content: ''; */
+  /* position: absolute; */
+  /* top: -50%; */
+  /* left: -50%; */
+  /* width: 200%; */
+  /* height: 200%; */
+  /* background: radial-gradient(circle, rgba(0, 255, 230, 0.15), transparent 70%); */
+  animation: pulse 3s infinite;
+  z-index: -1;
+}
+
+.squad-card:hover {
+  transform: scale(1.08);
+  background: #242853;
+  color: #ffffff;
+  box-shadow: 
+    0 0 15px #00ffe7,
+    0 0 40px #00ffe7 inset;
+  z-index: 1;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+  100% { transform: scale(1); opacity: 0.4; }
+}
+
+.esports-box-image {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15vw;
+}
+
+.esports-image {
+  display: flex;
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+}
+
+.squad-card-box-name {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 8vw;
+  margin: 2px;
+  position: relative;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.battle-deck {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.player-card {
+  background: #0f3460;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  background: #533483;
+  box-shadow: 0 0 10px #00f2fe;
 }
