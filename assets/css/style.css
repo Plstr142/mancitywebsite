@@ -3698,7 +3698,7 @@ hr.my-1-1 {
   gap: 40px;
   align-items: center;
   width: 100vw;
-  height: 60vw;
+  height: 100vw;
 }
 
 .squad-row {
@@ -3711,8 +3711,8 @@ hr.my-1-1 {
   background: linear-gradient(135deg, #1a1d3a, #2e335a);
   color: #00ffe7;
   /* padding: 30px 20px; */
-  width: 20vw;
-  height: auto;
+  width: 28vw;
+  height: 32vw;
   text-align: center;
   border-radius: 15px;
   border: 1px solid #00ffe7;
@@ -3739,6 +3739,7 @@ hr.my-1-1 {
 .squad-card-name {
   font-size: 1.2vw;
   font-weight: bold;
+  padding: 20px;
 }
 
 
@@ -3789,12 +3790,49 @@ hr.my-1-1 {
 
 .squad-card-box-name {
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  position: relative;
+  gap: 30px;
+} 
+
+.squad-card-info-box {
+  display: flex;
   flex-direction: column;
   width: 100%;
-  height: 8vw;
-  margin: 2px;
+  height: 10vw;
+  /* padding: 10px; */
+  position: relative;
+  text-align: start;
+} 
+
+.squad-card-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10vw;
+  /* padding: 10px; */
   position: relative;
 } 
+
+.battle-deck {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(145deg, #1a1a2e, #16213e);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+.player-card {
+  background: #0f3460;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
 
 
 

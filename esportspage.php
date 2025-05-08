@@ -65,7 +65,6 @@
     ?>
 
     <div class="squad-arena">
-        <!-- Row 1 -->
         <div class="squad-row">
             <div class="squad-card">
                 <p class="squad-card-title">Edu Castellano</p>
@@ -73,18 +72,15 @@
                     <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
-                    <p class="squad-card-info">
-                        Info
-                        Date of birth
-                        2002-03-06
-                        Location
-                        Tenerife, Spain
-                        Nationality
-                        Spain
-                        Spain
-                        Game
-                        EA FC </p>
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="squad-card">
@@ -93,7 +89,15 @@
                     <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="squad-card">
@@ -102,14 +106,75 @@
                     <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
                 </div>
                 <div class="squad-card-box-name">
-                    <p class="squad-card-name">Edu Castellano</p>
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="squad-card">Card 2</div>
-            <div class="squad-card">Card 3</div> -->
         </div>
 
         <!-- Row 2 -->
+        <div class="squad-row">
+            <div class="squad-card">
+                <p class="squad-card-title">Edu Castellano</p>
+                <div class="esports-box-image">
+                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                </div>
+                <div class="squad-card-box-name">
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="squad-card">
+                <p class="squad-card-title">Edu Castellano</p>
+                <div class="esports-box-image">
+                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                </div>
+                <div class="squad-card-box-name">
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="squad-card">
+                <p class="squad-card-title">Edu Castellano</p>
+                <div class="esports-box-image">
+                    <img class="esports-image" src="assets/images/teameasportsfc/edu.jpg" alt="edu">
+                </div>
+                <div class="squad-card-box-name">
+                    <p class="squad-card-name">Info</p>
+                    <div class="squad-card-info-box">
+                        <p class="squad-card-info">
+                        <p>Date of birth: 2002-03-06</p>
+                        <p>Location : Tenerife, Spain</p>
+                        <p>Nationality : Spain</p>
+                        <p>Game: EA FC</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sdsadasdsasadsds -->
         <div class="squad-row">
             <div class="squad-card">Card 4</div>
             <div class="squad-card">Card 5</div>
