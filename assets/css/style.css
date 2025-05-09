@@ -253,9 +253,10 @@ nav .nav-container {
 .nav-menu a {
   text-decoration: none;
   color: var(--body-color);
-  font-weight: 500;
+  font-weight: bold;
   padding: 10px 15px;
   transition: color 0.3s ease;
+  font-size: 1.2vw;
 }
 
 /* Galaxy S8+ */
@@ -264,7 +265,7 @@ nav .nav-container {
     text-decoration: none;
     color: var(--body-color);
     font-size: 4vw;
-    font-weight: 500;
+    font-weight: bold;
     padding: 10px 15px;
     transition: color 0.3s ease;
   }
@@ -276,7 +277,7 @@ nav .nav-container {
     text-decoration: none;
     color: var(--body-color);
     font-size: 4vw;
-    font-weight: 500;
+    font-weight: bold;
     padding: 10px 15px;
     transition: color 0.3s ease;
   }
@@ -316,6 +317,20 @@ nav .nav-container {
     border-radius: 0px;
     overflow-x: hidden; */
   }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--body-color);
+    box-shadow: 0px 4px 4px 2px hsl(212, 42%, 20%);
+    display: none;
+    min-width: 140px;
+  }
 }
 
 
@@ -340,7 +355,7 @@ nav .nav-container {
 .dropdown-menu li a {
   display: block;
   color: var(--container-color);
-  font-size: 4vw;
+  font-size: 1.2vw;
 
   
   @media (min-width: 320px) and (max-width: 360px) {
