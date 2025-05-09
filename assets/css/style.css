@@ -55,9 +55,14 @@ body {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  overflow-x: hidden;
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
+    overflow-x: hidden;
+  }
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
     overflow-x: hidden;
   }
 }
@@ -1780,7 +1785,8 @@ hr.my-1-1 {
   display: flex;
   flex-direction: column;
   width: 70vw;
-  height: auto;
+  /* height: auto; */
+  height: 85vw;
   padding: 12px;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -2095,7 +2101,8 @@ hr.my-1-1 {
 }
 
 .news-items::-webkit-scrollbar-thumb {
-  background: #2e8bc0;
+  /* background: #2e8bc0; */
+  background: var(--body-color);
   border-radius: 10px;
 }
 
@@ -3855,7 +3862,7 @@ hr.my-1-1 {
     0 0 10px rgba(0, 255, 230, 0.3),
     0 0 20px rgba(0, 255, 230, 0.2) inset;
   transition: all 0.3s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   overflow: hidden;
   /* z-index: 1; */
@@ -3874,6 +3881,7 @@ hr.my-1-1 {
 .follow-us-link-box a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .esports-link-box {

@@ -180,7 +180,7 @@
         <div class="squad-card-nationality">
             <div class="nationality-box">
                 <div class="text-nationality">
-                    Nationality
+                    EA FCCommunity
                     <div class="nationality-link-box">
                         <a class="nationality-link-box" href="#">
                             <img class="flag-icon" src="assets/images/flags/gb-eng.jpg" alt="england">
@@ -250,75 +250,9 @@
     </div>
 
 
-    <!-- modalDescproduct -->
-    <div class="modal" id="modalDescproduct" style="display: none;">
-        <div onclick="CloseModal()" class="modal-bg">
-        </div>
-        <div class="modal-page">
-            <p class="topic-news">Manchester City Poster</p>
-            <br>
-
-            <div class="cartlist-spacer">
-                <div class="cartlist">
-                    <div class="cartlist-items">
-                        <div class="cartlist-left">
-                            <div class="cartlist-img">
-                                <img id="mdd-img" src="assets/images/DavidSilva.jpg" alt="DavidSilva">
-                            </div>
-                        </div>
-                        <div class="cartlist-center">
-                            <div class="cartlist-detail">
-                                <p id="mdd-name" class="product-name">Product Name</p>
-                                <p id="mdd-price" class="product-price">500 THB</p>
-                            </div>
-                        </div>
-                        <div class="cartlist-right">
-                            <p class="btnc">-</p>
-                            <p class="btnq">1</p>
-                            <p class="btnc">+</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="btn-control">
-                <div class="btn-group-submit">
-                    <button onclick="AddtoCart()" class="btn btn-submit">Add to Cart</button>
-                </div>
-                <div class="btn-group-out">
-                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modalCart" style="display: none;">
-        <div onclick="CloseModal()" class="modal-bg">
-        </div>
-        <div class="modal-page">
-            <p class="topic-news">My Cart</p>
-            <br>
-            <div class="cartlist-spacer">
-                <div id="mycart" class="cartlist">
-                    <!-- cartlist item -->
-                </div>
-            </div>
-            <br>
-            <div class="btn-control">
-                <div class="btn-group-submit">
-                    <button class="btn btn-submit">Checkout</button>
-                </div>
-                <div class="btn-group-out">
-                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
-
-
-
+    <?php include 'modals.php'; ?>
     <?php include 'footer.php'; ?>
 
 
