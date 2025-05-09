@@ -50,16 +50,16 @@
 
     $navs = $dom->getElementsByTagName('nav');
     foreach ($navs as $nav) {
-        // หาทุกลิงก์ <a> ใน <nav>
-        $links = $nav->getElementsByTagName('a');
-        foreach ($links as $link) {
-            // ตรวจสอบว่า <a> มีข้อความ "News" หรือไม่
-            if ($link->nodeValue == 'News') {
-                // กำหนด href เป็น index.php
-                $link->setAttribute('href', 'index.php');
+      
+        $anchors = $nav->getElementsByTagName('a');
+        foreach ($anchors as $anchor) {
+          
+            if (trim($anchor->textContent) == 'News') {
+                
+                $anchor->setAttribute('href', 'index.php');
             }
         }
-        // แสดงผล <nav> หลังจากแก้ไขลิงก์
+   
         echo $dom->saveHTML($nav);
     }
     ?>
@@ -247,6 +247,72 @@
         <div class="player-card-battle-deck">Player 1</div>
         <div class="player-card-battle-deck">Player 2</div>
         <div class="player-card-battle-deck">Player 3</div>
+    </div>
+
+
+    <!-- modalDescproduct -->
+    <div class="modal" id="modalDescproduct" style="display: none;">
+        <div onclick="CloseModal()" class="modal-bg">
+        </div>
+        <div class="modal-page">
+            <p class="topic-news">Manchester City Poster</p>
+            <br>
+
+            <div class="cartlist-spacer">
+                <div class="cartlist">
+                    <div class="cartlist-items">
+                        <div class="cartlist-left">
+                            <div class="cartlist-img">
+                                <img id="mdd-img" src="assets/images/DavidSilva.jpg" alt="DavidSilva">
+                            </div>
+                        </div>
+                        <div class="cartlist-center">
+                            <div class="cartlist-detail">
+                                <p id="mdd-name" class="product-name">Product Name</p>
+                                <p id="mdd-price" class="product-price">500 THB</p>
+                            </div>
+                        </div>
+                        <div class="cartlist-right">
+                            <p class="btnc">-</p>
+                            <p class="btnq">1</p>
+                            <p class="btnc">+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="btn-control">
+                <div class="btn-group-submit">
+                    <button onclick="AddtoCart()" class="btn btn-submit">Add to Cart</button>
+                </div>
+                <div class="btn-group-out">
+                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalCart" style="display: none;">
+        <div onclick="CloseModal()" class="modal-bg">
+        </div>
+        <div class="modal-page">
+            <p class="topic-news">My Cart</p>
+            <br>
+            <div class="cartlist-spacer">
+                <div id="mycart" class="cartlist">
+                    <!-- cartlist item -->
+                </div>
+            </div>
+            <br>
+            <div class="btn-control">
+                <div class="btn-group-submit">
+                    <button class="btn btn-submit">Checkout</button>
+                </div>
+                <div class="btn-group-out">
+                    <button onclick="CloseModal()" class="btn btn-out">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
