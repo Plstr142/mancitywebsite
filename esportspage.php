@@ -181,7 +181,7 @@
             <div class="nationality-box">
                 <div class="text-nationality">
                     Community
-                    <div class="nationality-link-box">
+                    <div class="nationality-link-box-group">
                         <a class="nationality-link-box" href="#">
                             <img class="flag-icon" src="assets/images/flags/gb-eng.jpg" alt="england">
                         </a>

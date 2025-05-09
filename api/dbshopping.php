@@ -11,7 +11,9 @@
         $db = new PDO($dsn, $db_user, $db_pass);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         // echo "database is connected";
-        // echo json_encode(["message" => "database is connected"]);
+
+        // dev อยู่ default เป็น connected
+        echo json_encode(["message" => "database is connected"]);
     } catch(PDOException $e) {
         // echo $e->getMessage();
         echo json_encode(["error" => $e->getMessage()]);

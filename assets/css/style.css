@@ -4041,24 +4041,28 @@ hr.my-1-1 {
     0 0 10px rgba(0, 255, 230, 0.3),
     0 0 20px rgba(0, 255, 230, 0.2) inset;
   transition: all 0.3s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
   position: relative;
   overflow: hidden;
 
   /* outline: 1px solid yellow; */
 }
 
-.nationality-link-box {
+.nationality-link-box-group {
   width: auto;
   height: auto;
   /* outline: 1px solid white; */
+}
+
+.nationality-link-box-group a {
   text-decoration: none;
 }
 
 .nationality-link-box img {
   width: 10vw;
-  text-decoration: none;
+  /* text-decoration: none; */
   color: white;
+  cursor: default;
 }
 
 
