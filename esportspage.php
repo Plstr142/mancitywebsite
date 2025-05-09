@@ -180,7 +180,7 @@
         <div class="squad-card-nationality">
             <div class="nationality-box">
                 <div class="text-nationality">
-                    EA FCCommunity
+                    Community
                     <div class="nationality-link-box">
                         <a class="nationality-link-box" href="#">
                             <img class="flag-icon" src="assets/images/flags/gb-eng.jpg" alt="england">
