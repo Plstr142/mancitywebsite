@@ -2,7 +2,7 @@ var productposter = [
   {
     id: 1,
     // img: "assets/images/DavidSilva.jpg",
-    img: "assets/images/DavidSilva.jpg",
+    img: "assets/images/1746805811001.jpg",
     name: "David Silva Poster",
     price: "280",
     description: "This is David Silva Poster",
@@ -11,7 +11,8 @@ var productposter = [
   },
   {
     id: 2,
-    img: "assets/images/ErlingHaaland_ManchesterCityPosterfootball.jpg",
+    // img: "assets/images/ErlingHaaland_ManchesterCityPosterfootball.jpg",
+    img: "assets/images/1746805861705.jpg",
     name: "Erling Haaland Poster",
     price: "320",
     description: "This is Erling Haaland Poster",
@@ -20,7 +21,8 @@ var productposter = [
   },
   {
     id: 3,
-    img: "assets/images/KDB.jpg",
+    // img: "assets/images/KDB.jpg",
+    img: "assets/images/1746805892265.jpg",
     name: "Kevin De Bruyne Poster",
     price: "320",
     description: "This is Kevin De Bruyne Poster",
@@ -29,7 +31,8 @@ var productposter = [
   },
   {
     id: 4,
-    img: "assets/images/KYLE_WALKER.jpg",
+    // img: "assets/images/KYLE_WALKER.jpg",
+    img: "assets/images/1746805921935.jpg",
     name: "Kyle Walker Poster",
     price: "280",
     description: "This is Kyle Walker Poster",
@@ -38,7 +41,8 @@ var productposter = [
   },
   {
     id: 5,
-    img: "assets/images/pep_manager.jpg",
+    // img: "assets/images/pep_manager.jpg",
+    img: "assets/images/1746805990727.jpg",
     name: "Pep Manager Poster",
     price: "360",
     description: "This is Pep Manager Poster",
@@ -47,7 +51,7 @@ var productposter = [
   },
   // {
   //   id: 6,
-  //   img: "assets/images/Nasri.jpg",
+  //   img: "assets/images/1746806362163.jpg",
   //   name: "Nasri Poster",
   //   price: "320",
   //   description: "This is Nasri Poster",

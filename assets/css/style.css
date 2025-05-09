@@ -301,34 +301,59 @@ nav .nav-container {
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    border: 1px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--body-color);
+    box-shadow: 0px 4px 4px 2px hsl(212, 42%, 20%);
+    display: none;
+    min-width: 120px;
+
+    /* border: 1px solid transparent;
     border-radius: 0px;
-    overflow-x: hidden;
+    overflow-x: hidden; */
   }
 }
+
 
 .dropdown:hover .dropdown-menu {
   display: block;
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    border: 1px solid transparent;
-    border-radius: 0px;
-    display: flex;
-    box-shadow: 0px 4px 4px 2px hsl(212, 42%, 20%);
+    display: block;
+    color: var(--container-color);
+    font-size: 2.1vw;
   }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    display: block;
+    color: var(--container-color);
+    font-size: 4vw;
+  } 
 }
 
 .dropdown-menu li a {
   display: block;
   color: var(--container-color);
-  font-size: 1rem;
+  font-size: 4vw;
 
-  /* Galaxy S8+ */
+  
   @media (min-width: 320px) and (max-width: 360px) {
     display: block;
     color: var(--container-color);
-    font-size: 2.1vw;
+    font-size: 4vw;
+  }
+  
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    display: block;
+    color: var(--container-color);
+    font-size: 4vw;
   }
 }
 
@@ -382,6 +407,20 @@ nav .nav-container {
   color: #37003c;
   font-size: 2.4vw;
   font-weight: bold;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    color: #37003c;
+    font-size: 8vw;
+    font-weight: bold;
+  }
+  
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    color: #37003c;
+    font-size: 8vw;
+    font-weight: bold;
+  }
 }
 
 .standings-title-season {
@@ -390,6 +429,20 @@ nav .nav-container {
   font-size: 1.5vw;
   font-weight: bold;
   padding: 0px 0px 6px 0px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    color: #37003c;
+    font-size: 6vw;
+    font-weight: bold;
+  }
+    
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    color: #37003c;
+    font-size: 6vw;
+    font-weight: bold;
+  }
 }
 
 .update-box {
@@ -517,6 +570,18 @@ tbody tr:last-child {
   color: #37003c;
   font-size: 1.8vw;
   padding: 20px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+  color: #37003c;
+  font-size: 5vw;
+  }
+    
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+  color: #37003c;
+  font-size: 5vw;
+  }
 }
 
 .club-text-sub p {
@@ -525,6 +590,18 @@ tbody tr:last-child {
   color: #37003c;
   font-size: 1.2vw;
   padding: 10px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    color: #37003c;
+    font-size: 3vw;
+  }
+        
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    color: #37003c;
+    font-size: 3vw;
+  }
 }
 
 .club-text-sub .quote {
@@ -533,6 +610,19 @@ tbody tr:last-child {
   color: #37003c;
   font-size: 3.2vw;
   padding: 35px;
+
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    color: #37003c;
+    font-size: 8vw;
+  }
+          
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    color: #37003c;
+    font-size: 8vw;
+  }
 }
 
 
@@ -3888,15 +3978,6 @@ hr.my-1-1 {
   box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
 }
 
-.player-card {
-  background: #0f3460;
-  color: #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-}
-
-
 /* nationality */
 .nationality-box {
   width: 100%;
@@ -4002,7 +4083,7 @@ hr.my-1-1 {
   box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
 }
 
-.player-card {
+.player-card-battle-deck {
   background: #0f3460;
   color: #e0e0e0;
   padding: 20px;
@@ -4010,7 +4091,7 @@ hr.my-1-1 {
   transition: transform 0.2s ease;
 }
 
-.player-card:hover {
+.player-card-battle-deck:hover {
   transform: scale(1.05);
   background: #533483;
   box-shadow: 0 0 10px #00f2fe;

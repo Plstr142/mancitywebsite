@@ -244,9 +244,9 @@
     </div> -->
 
     <div class="battle-deck">
-        <div class="player-card">Player 1</div>
-        <div class="player-card">Player 2</div>
-        <div class="player-card">Player 3</div>
+        <div class="player-card-battle-deck">Player 1</div>
+        <div class="player-card-battle-deck">Player 2</div>
+        <div class="player-card-battle-deck">Player 3</div>
     </div>
 
 

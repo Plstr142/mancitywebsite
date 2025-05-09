@@ -301,7 +301,7 @@ $poster_name = [
                     <div class="cartlist-items">
                         <div class="cartlist-left">
                             <div class="cartlist-img">
-                                <img id="mdd-img" src="assets/images/DavidSilva.jpg" alt="DavidSilva">
+                                <img id="mdd-img" src="assets/images/1746805811001.jpg" alt="DavidSilva">
                             </div>
                         </div>
                         <div class="cartlist-center">
@@ -573,7 +573,7 @@ $poster_name = [
             <div class="squad-content">
                 <h3 class="squad-title">The Man City Esports Team</h3>
                 <p class="squad-description">EA SPORTS FC</p>
-                <a href="esports-page.php">
+                <a href="esportspage.php">
                     <button class="explore-btn">
                         <div class="text-see-more">see more</div>
                     </button>
