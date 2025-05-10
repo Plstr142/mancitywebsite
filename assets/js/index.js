@@ -1,98 +1,112 @@
 const BASE_PATH = "assets/images/";
 
-var productposter = [
-  {
-    id: 1,
-    // img: "assets/images/DavidSilva.jpg",
-    img: `${BASE_PATH}1746805811001.jpg`,
-    name: "David Silva Poster",
-    price: "280",
-    description: "This is David Silva Poster",
-    type: "poster",
-    param: "poster",
-  },
-  {
-    id: 2,
-    // img: "assets/images/ErlingHaaland_ManchesterCityPosterfootball.jpg",
-    img: `${BASE_PATH}1746805861705.jpg`,
-    name: "Erling Haaland Poster",
-    price: "320",
-    description: "This is Erling Haaland Poster",
-    type: "poster",
-    param: "poster",
-  },
-  {
-    id: 3,
-    // img: "assets/images/KDB.jpg",
-    img: `${BASE_PATH}1746805892265.jpg`,
-    name: "Kevin De Bruyne Poster",
-    price: "320",
-    description: "This is Kevin De Bruyne Poster",
-    type: "poster",
-    param: "poster",
-  },
-  {
-    id: 4,
-    // img: "assets/images/KYLE_WALKER.jpg",
-    img: `${BASE_PATH}1746805921935.jpg`,
-    name: "Kyle Walker Poster",
-    price: "280",
-    description: "This is Kyle Walker Poster",
-    type: "poster",
-    param: "poster",
-  },
-  {
-    id: 5,
-    // img: "assets/images/pep_manager.jpg",
-    img: `${BASE_PATH}1746805990727.jpg`,
-    name: "Pep Manager Poster",
-    price: "360",
-    description: "This is Pep Manager Poster",
-    type: "poster",
-    param: "poster",
-  },
-  // {
-  //   id: 6,
-  //   img: "assets/images/1746806362163.jpg",
-  //   name: "Nasri Poster",
-  //   price: "320",
-  //   description: "This is Nasri Poster",
-  //   type: "poster",
-  //   param: "poster",
-  // },
-];
+// var productposter = [
+//   {
+//     id: 1,
+//     img: `${BASE_PATH}1746805811001.jpg`,
+//     name: "David Silva Poster",
+//     price: "280",
+//     description: "This is David Silva Poster",
+//     type: "poster",
+//     param: "poster",
+//   },
+//   {
+//     id: 2,
+//     img: `${BASE_PATH}1746805861705.jpg`,
+//     name: "Erling Haaland Poster",
+//     price: "320",
+//     description: "This is Erling Haaland Poster",
+//     type: "poster",
+//     param: "poster",
+//   },
+//   {
+//     id: 3,
+//     img: `${BASE_PATH}1746805892265.jpg`,
+//     name: "Kevin De Bruyne Poster",
+//     price: "320",
+//     description: "This is Kevin De Bruyne Poster",
+//     type: "poster",
+//     param: "poster",
+//   },
+//   {
+//     id: 4,
+//     img: `${BASE_PATH}1746805921935.jpg`,
+//     name: "Kyle Walker Poster",
+//     price: "280",
+//     description: "This is Kyle Walker Poster",
+//     type: "poster",
+//     param: "poster",
+//   },
+//   {
+//     id: 5,
+//     img: `${BASE_PATH}1746805990727.jpg`,
+//     name: "Pep Manager Poster",
+//     price: "360",
+//     description: "This is Pep Manager Poster",
+//     type: "poster",
+//     param: "poster",
+//   },
+//  {
+//   id: 6,
+//   img: "assets/images/1746806362163.jpg",
+//   name: "Nasri Poster",
+//   price: "320",
+//   description: "This is Nasri Poster",
+//   type: "poster",
+//   param: "poster",
+//  },
+// ];
 
 // [{}, {}, {}, {}, {}]; // length 5
 {
   /* <div class="my-card-news ${item.type} active" data-id="${item.id}" data-type="${item.type}" data-param="${item.param}"> */
 }
 
+var productposter;
+
 $(document).ready(function () {
-  const cardList = $("#card-list");
+  $.ajax({
+    method: "get",
+    url: "./api/getallproduct.php",
+    success: function (response) {
+      console.log(response);
+      if (response.RespCode == 200) {
+        // console.log();
+        productposter = response.Result;
 
-  for (let i = 0; i < productposter.length; i++) {
-    const item =
-      productposter[i].type === "image" ? productposter[i] : productposter[i];
-    const cardHtml = `
-      <div class="card ${item.type}" data-id="${item.id}" data-type="${item.type}">
-        <div class="card-header">
-          <h4 class="card-name">${item.name}</h4>
-          <p class="card-description">${item.description}</p>
-        </div>
-        <div class="card-footer">
-          <div class="card-footer-img">
-            <img src="${item.img}" alt="${item.name}">
-          </div>
-          <i class="fa-solid fa-tag"></i>
-          <p>price</p>
-          <p>${item.price} THB</p>
-          <button onclick="openProductDetail(${i})" class="btn-buy">Buy</button>
-        </div>
-      </div>
-    `;
+        const cardList = $("#card-list");
 
-    cardList.append(cardHtml);
-  }
+        for (let i = 0; i < productposter.length; i++) {
+          const item =
+            productposter[i].type === "image"
+              ? productposter[i]
+              : productposter[i];
+          const cardHtml = `
+            <div class="card ${item.type}" data-id="${item.id}" data-type="${item.type}">
+              <div class="card-header">
+                <h4 class="card-name">${item.name}</h4>
+                <p class="card-description">${item.description}</p>
+              </div>
+              <div class="card-footer">
+                <div class="card-footer-img">
+                  <img src="assets/images/${item.img}" alt="${item.name}">
+                </div>
+                <i class="fa-solid fa-tag"></i>
+                <p>price</p>
+                <p>${item.price} THB</p>
+                <button onclick="openProductDetail(${i})" class="btn-buy">Buy</button>
+              </div>
+            </div>
+          `;
+
+          cardList.append(cardHtml);
+        }
+      }
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
 });
 
 /********************************************************************************************************/

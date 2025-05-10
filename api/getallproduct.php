@@ -5,7 +5,7 @@
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
             $object = new stdClass();
 
-            $stmt = $db->prepare('select * from shopping_product order by id desc');
+            $stmt = $db->prepare('select * from shopping_product order by id asc');
 
             if($stmt->execute()) {
                 $num = $stmt->rowCount();
@@ -13,15 +13,16 @@
                     $object->Result = array();
                     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                         extract($row);
-                        $product_item = array(
-                            'id' => $id,
-                            'name' => $name,
-                            'image' => $img,
-                            'price' => $price,
-                            'description' => $description,
-                            'type' => $type
-                        );
-                        array_push($object->Result, $product_item);
+                        // $product_item = array(
+                        //     'id' => $id,
+                        //     'name' => $name,
+                        //     'image' => $img,
+                        //     'price' => $price,
+                        //     'description' => $description,
+                        //     'type' => $type
+                        // );
+                        // array_push($object->Result, $product_item);
+                        array_push($object->Result, $row);
                     }
                     $object->RespCode = 200;
                     $object->RespMessage = 'success';
@@ -32,6 +33,9 @@
                     $object->RespMessage = 'bad: Not found data';
                     http_response_code(400);
                 }
+                
+                // echo
+                echo json_encode($object);
             } else {
                 $object->RespCode = 500;
                 $object->Log = 1;
