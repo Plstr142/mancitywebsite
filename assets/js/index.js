@@ -631,7 +631,7 @@ function searchsomethingproduct(elem) {
         </div>
         <div class="card-footer">
           <div class="card-footer-img">
-            <img src="${item.img}" alt="${item.name}">
+            <img src="assets/images/${item.img}" alt="${item.name}">
           </div>
           <i class="fa-solid fa-tag"></i>
           <p>price</p>
@@ -731,7 +731,7 @@ function openProductDetail(index) {
   productIndex = index;
   console.log(productIndex);
   $("#modalDescproduct").css("display", "flex");
-  $("#mdd-img").attr("src", productposter[index].img);
+  $("#mdd-img").attr("src", "assets/images/" + productposter[index].img);
   $("#mdd-name").text(productposter[index].name);
   $("#mdd-price").text(`${productposter[index].price} THB`);
 }
@@ -950,7 +950,7 @@ function renderCart() {
       html += `<div class="cartlist-items">
       <div class="cartlist-left">
           <div class="cartlist-img">
-              <img src="${cart[i].img}" alt="${cart[i].name}">
+              <img src="assets/images/${cart[i].img}" alt="${cart[i].name}">
           </div> 
       </div>
       <div class="cartlist-center">
