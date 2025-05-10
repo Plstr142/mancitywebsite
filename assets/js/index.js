@@ -1021,6 +1021,10 @@ function deinitems(action, index) {
   }
 }
 
+function Buynow() {
+  asdasd;
+}
+
 // btt back to top
 let myBtn = document.getElementById("btt");
 
