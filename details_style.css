@@ -29,20 +29,14 @@
   --extra2-color: #ffb3f7ff;
 }
 
-/* * {
+* {
   top: 0px;
   left: 0px;
   display: flex;
   box-sizing: border-box;
-} */
+}
 
 body {
   background-color: var(--container-color);
   color: var(--white-color);
 }
-
-/* .container {
-  background-color: var(--container-color);
-  border-radius: 10px;
-  padding: 20px;
-} */

@@ -1,5 +1,5 @@
 .list-group {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   outline: none;
@@ -27,11 +27,89 @@
   background-color: var(--bs-list-group-bg);
   border: var(--bs-list-group-border-width) solid
     var(--bs-list-group-border-color);
-    top: -2165px;
-    left: 120px;
+    top: -2980px;
+    left: 165px;
     outline: none;
     z-index: 1;
+    width: 30%;
+}
+
+/* Galaxy S8+ */
+@media (min-width: 320px) and (max-width: 360px) {
+  .list-group {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    outline: none;
     width: 60%;
+    z-index: 1;
+    border-radius: 0.25rem;
+  }
+  
+  .list-group-item:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  .list-group-item:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  
+  .list-group-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--bs-list-group-item-padding-y)
+      var(--bs-list-group-item-padding-x);
+    color: var(--extra-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: var(--bs-list-group-border-width) solid
+      var(--bs-list-group-border-color);
+      top: -1750px;
+      left: 94px;
+      outline: none;
+      z-index: 1;
+      width: 80%;
+  }
+}
+    
+/* iPhone 14 Pro Max */
+@media (min-width: 415px) and (max-width: 431px) {
+  .list-group {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    width: 60%;
+    z-index: 1;
+    border-radius: 0.25rem;
+  }
+  
+  .list-group-item:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  .list-group-item:first-child {
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+  
+  .list-group-item {
+    display: flex;
+    flex-direction: column;
+    padding: var(--bs-list-group-item-padding-y)
+      var(--bs-list-group-item-padding-x);
+    color: var(--extra-color);
+    text-decoration: none;
+    background-color: var(--bs-list-group-bg);
+    border: var(--bs-list-group-border-width) solid
+      var(--bs-list-group-border-color);
+      top: -2388px;
+      left: 97px;
+      outline: none;
+      z-index: 1;
+      width: 80%;
+  }  
 }
 
 :root {
