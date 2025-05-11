@@ -25,7 +25,7 @@
     </head>
 
     <body>
-        <nav
+        <!-- <nav
             class="navbar navbar-expand-sm navbar-light bg-light"
         >
             <div class="container">
@@ -90,7 +90,7 @@
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav> -->
         
         <main class="container">
             <form id="loginForm" action="">

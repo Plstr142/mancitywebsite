@@ -1,20 +1,113 @@
-<!-- <section class="poster_container">
-            class="carousel slide" data-bs-ride="carousel"
-            id="playerCarousel" class="carousel-inner"
-            <div class="card_container swiper">
+<nav
+        class="navbar navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">
+                <img class="logo-mancity" src="assets/images/logo/mancity.jpg" alt="mancitylogo">
+            </a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Home
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">Dropdown</a>
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="d-flex my-2 my-lg-0">
+                    <?php if (isset($_SESSION['adminid'])) { ?>
+                        <a id="logout" class="btn btn-warning">Logout</a>
+                    <?php } else { ?>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <main class="container">
+        <?php
+        $adminId = $_SESSION['adminid'];
+        $stmt = $con->prepare("SELECT * FROM users WHERE id = :adminid");
+        $stmt->bindParam(":adminid", $adminId);
+        $stmt->execute();
+
+        $adminData = $stmt->fetch();
+        ?>
+        <!-- <h1>Hello, <= htmlspecialchars(isset($adminData['username']) ? $adminData['username'] : 'Guest'); ></h1> -->
+    </main>
+
+<div class="landing_wrapper">
+            <div class="container_search">
+                <div class="search_box row">
+                    <div class="col-md-8 mx-auto rounded p-4 m-4 w-auto">
+                        <a href="#" class="image_row">
+                            <img src="assets/images/thisistheplacemancity.jpg" alt="image" class="card_img">
+                        </a>
+                        <h5 class="text-center font-weight-bold">Manchester City Search</h5>
+                        <hr class="my-1">
+                        <!-- <h5 class="text-center text-secondary">Please write any player name in the search box</h5> -->
+                        <form action="details.php" method="POST" class="p-2" style="position: relative;">
+                            <div class="input-group">
+                                <input type="text" name="search" id="search" class="form-control form-control-lg border-info rounded" placeholder="Please write any player name in the search box" autocomplete="off" required>
+                                <div class="input-group-append">
+                                    <input type="submit" name="submit" value="Search" class="btn btn-dark btn-lg m-2 rounded">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="list-group" style="position: absolute; width: 400px;" id="show-list"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center m-4">Our Top Poster</h2>
+
+        <section class="poster_container">
+            <!-- class="carousel slide" data-bs-ride="carousel" -->
+            <!-- id="playerCarousel" class="carousel-inner" -->
+            <div class="card_container">
                 <div class="card_content">
-                    <div class="swiper-wrapper">
-                        <article class="card_article swiper-slider">
+                    <div>
+                        <article class="card_article">
                             <div class="card_image">
-                                <img src="assets/images/pep_1000_goals_wide.jpg" alt="image" class="card_img">
+                                <img src="assets/images/TheEtihadStadiumPoster.jpg" alt="image" class="card_img">
                             </div>
 
                             <div class="card_data">
                                 <h4 class="card_name"><?php echo $poster_name[0]; ?></h4>
                                 <p class="card_description">
-                                    This is TheEtihadStadium poster 
+                                    This is TheEtihadStadium poster
                                 </p>
-                                
+
                                 <a href="#" class="card_price_tag">
                                     <div class="left">
                                         <i class="fa-solid fa-tag"></i>
@@ -27,9 +120,9 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="card_article swiper-slider">
+                        <article class="card_article">
                             <div class="card_image">
-                                <img src="assets/images/pep_1000_goals_wide.jpg" alt="" class="card_img">
+                                <img src="assets/images/PosterErlingBrautHaalandGoalCollection.jpg" alt="" class="card_img">
                             </div>
 
                             <div class="card_data">
@@ -37,7 +130,7 @@
                                 <p class="card_description">
                                     This is Erling Braut Haaland Goal Collection
                                 </p>
-                                
+
                                 <a href="#" class="card_price_tag">
                                     <div class="left">
                                         <i class="fa-solid fa-tag"></i>
@@ -50,7 +143,7 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="card_article swiper-slider">
+                        <article class="card_article">
                             <div class="card_image">
                                 <img src="assets/images/pep_1000_goals_wide.jpg" alt="" class="card_img">
                             </div>
@@ -60,7 +153,7 @@
                                 <p class="card_description">
                                     This is Pep 1000 goals
                                 </p>
-                                
+
                                 <a href="#" class="card_price_tag">
                                     <div class="left">
                                         <i class="fa-solid fa-tag"></i>
@@ -73,9 +166,9 @@
                                 </a>
                             </div>
                         </article>
-                        <article class="card_article swiper-slider">
+                        <article class="card_article">
                             <div class="card_image">
-                                <img src="assets/images/pep_1000_goals_wide.jpg" alt="" class="card_img">
+                                <img src="assets/images/KyleWalker.jpg" alt="" class="card_img">
                             </div>
 
                             <div class="card_data">
@@ -83,7 +176,7 @@
                                 <p class="card_description">
                                     This is Kyle Walker
                                 </p>
-                                
+
                                 <div class="card_price_container">
                                     <a href="#" class="card_price_tag">
                                         <div class="left">
@@ -93,7 +186,7 @@
 
                                         <div class="right card_price">
                                             <span>240THB</span>
-                                        </div>      
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -101,84 +194,4 @@
                     </div>
                 </div>
             </div>
-    </section> -->
-
-
-
-<h1>ภาพรวมของโครงการ (Project Overview)
-
-    ต้องการพัฒนาเว็บไซต์ AI-Based Facebook Ads Automation ที่ช่วยให้ธุรกิจสามารถสร้าง จัดการ และปรับแต่งโฆษณาบน Facebook Ads โดยใช้ AI เพื่อเพิ่มประสิทธิภาพของแคมเปญ และลดต้นทุนโฆษณา
-
-    ฟังก์ชันหลักของระบบ (Core Features)
-
-    2.1 ระบบจัดการโฆษณาอัตโนมัติ (AI-Powered Ad Management)
-    ระบบช่วย สร้างโฆษณาอัตโนมัติ โดยใช้ AI วิเคราะห์พฤติกรรมผู้ใช้งาน
-    AI วิเคราะห์ประสิทธิภาพของโฆษณาแบบเรียลไทม์และเสนอการปรับปรุง
-    ระบบ A/B Testing เพื่อทดสอบเวอร์ชันต่าง ๆ ของโฆษณา
-    2.2 การเชื่อมต่อกับ Facebook Ads API
-    ระบบรองรับการเชื่อมต่อกับ Facebook Ads API เพื่อ:
-    ดึงข้อมูลแคมเปญที่มีอยู่
-    อัปเดตและสร้างแคมเปญใหม่
-    วิเคราะห์ข้อมูล Conversion และ Performance
-    2.3 ระบบสร้างเนื้อหาโฆษณาอัตโนมัติ (AI Ad Creative Generation)
-    ใช้ AI Natural Language Processing (NLP) เพื่อสร้าง ข้อความโฆษณา ตามกลุ่มเป้าหมาย
-    ใช้ AI Image Generator เพื่อสร้าง รูปภาพโฆษณาที่มีประสิทธิภาพสูง
-    ฟีเจอร์ Automated Video Ads ช่วยสร้างวิดีโอโฆษณาสั้น ๆ โดยอัตโนมัติ
-    2.4 Dashboard วิเคราะห์ข้อมูลโฆษณา (AI Analytics Dashboard)
-    กราฟวิเคราะห์ Performance Ads (CTR, CPC, ROI)
-    AI-Driven Recommendations ระบบให้คำแนะนำปรับปรุงโฆษณา
-    รายงานการใช้งานโฆษณาแบบ รายวัน / รายสัปดาห์ / รายเดือน
-    2.5 ระบบปรับแต่งกลุ่มเป้าหมายอัตโนมัติ (AI Audience Targeting)
-    AI วิเคราะห์พฤติกรรมและกำหนด กลุ่มเป้าหมายอัตโนมัติ
-    ฟีเจอร์ Lookalike Audience สร้างกลุ่มเป้าหมายใหม่ที่คล้ายกับลูกค้าเดิม
-    Geo-Targeting กำหนดเป้าหมายตามตำแหน่งที่ตั้ง
-    2.6 ระบบการชำระเงิน (Billing & Subscription)
-    รองรับ ระบบ Subscription รายเดือน / รายปี
-    รองรับ การชำระเงินออนไลน์ (Credit Card, PayPal, QR Payment)
-    ระบบแจ้งเตือนการชำระเงิน และการต่ออายุแพ็กเกจอัตโนมัติ
-    2.7 ระบบบัญชีและการจัดการผู้ใช้ (User Management)
-    OAuth Login ผ่าน Google / Facebook
-    ผู้ใช้สามารถ เชื่อมต่อบัญชี Facebook Ads ของตน กับระบบ
-    ระบบรองรับ หลายบัญชีโฆษณา ในการใช้งานเดียวกัน
-    มีระบบ Role Management (Admin, User, Editor)
-
-
-    โครงสร้างเทคโนโลยี (Tech Stack)
-
-    3.1 Frontend
-    React.js / Next.js (สำหรับ UI/UX)
-    Tailwind CSS หรือ Material UI (ออกแบบหน้าตาเว็บไซต์)
-    Chart.js / D3.js (ใช้แสดงผลข้อมูลกราฟ)
-    3.2 Backend
-    Node.js + Express.js (รองรับ API Requests)
-    Python (FastAPI หรือ Flask) (สำหรับ AI Automation)
-    3.3 Database
-    PostgreSQL หรือ MySQL (จัดเก็บข้อมูลผู้ใช้และโฆษณา)
-    Redis หรือ MongoDB (จัดเก็บข้อมูลแคชและผลวิเคราะห์)
-    3.4 AI & Machine Learning
-    OpenAI GPT / Hugging Face (สำหรับสร้างข้อความโฆษณา)
-    TensorFlow / PyTorch (สำหรับ AI วิเคราะห์ Performance Ads)
-    Facebook Ads API (ใช้ดึงข้อมูลและจัดการโฆษณา)
-    3.5 Cloud & Deployment
-    AWS / Google Cloud / DigitalOcean (สำหรับโฮสต์ระบบ)
-    Docker + Kubernetes (สำหรับจัดการ Microservices)
-    CI/CD Pipeline (สำหรับอัปเดตระบบอัตโนมัติ)
-
-
-    Wireframe & UI/UX Design
-
-    หน้าแรก (Landing Page)
-    ข้อมูลเกี่ยวกับระบบ และแพ็กเกจราคา
-    ปุ่ม Sign Up / Login
-    Dashboard หลัก
-    กราฟวิเคราะห์โฆษณา
-    สถานะโฆษณาที่รันอยู่
-    คำแนะนำจาก AI
-    หน้าแคมเปญ (Campaign Management)
-    สร้างแคมเปญใหม่
-    รายการโฆษณาที่รันอยู่
-    หน้า Subscription & Billing
-    รายละเอียดแพ็กเกจ / การชำระเงิน
-    หน้า User Profile & Settings
-    จัดการบัญชี และเชื่อมต่อ Facebook Ads
-    0</h1>
+        </section>

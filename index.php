@@ -38,7 +38,7 @@ $poster_name = [
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
