@@ -2142,6 +2142,27 @@ hr.my-1-1 {
   color: var(--light);
 }
 
+.my-card-news:hover.active {
+  /* display: block; ค่าเดิม */
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+.my-card-news:hover {
+  /* padding: 2rem; */
+  border-radius: 10px;
+  /* width: 90%; ค่าเดิม */
+  /* width: 90%;  */
+  /* margin: 20px; */
+  background-color: black;
+  box-shadow: -0.1rem 0 9rem var(--extra1-color);
+  text-align: center;
+  font-size: 1vw;
+  font-weight: bold;
+  color: var(--light);
+}
+
 .my-card-news.active {
   /* display: block; ค่าเดิม */
   display: flex;
@@ -2180,12 +2201,23 @@ hr.my-1-1 {
 }
 
 .my-card-news.active:hover {
+  /* padding: 2rem; */
+  border-radius: 10px;
+  /* width: 90%; */
+  /* margin: 20px; */
+  background-color: black;
+  box-shadow: -0.1rem 0 9rem var(--extra1-color);
+  text-align: center;
+  font-size: 1vw;
+  font-weight: bold;
+  color: var(--light);
+
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 10px;
-    width: 90%;
-    margin: 20px;
+    /* width: 90%; */
+    /* margin: 20px; */
     background-color: black;
     box-shadow: -0.1rem 0 9rem var(--extra1-color);
     text-align: center;
@@ -2196,10 +2228,10 @@ hr.my-1-1 {
 
   /* iPhone 14 Pro Max */
   @media (min-width: 415px) and (max-width: 431px) {
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 10px;
-    width: 90%;
-    margin: 20px;
+    /* width: 90%; */
+    /* margin: 20px; */
     background-color: black;
     box-shadow: -0.1rem 0 9rem var(--extra1-color);
     text-align: center;
