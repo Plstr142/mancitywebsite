@@ -18,9 +18,9 @@
                     </div>
                     <br>
                     <div class="btn-control">
-                        <div class="btn-group-submit">
+                        <!-- <div class="btn-group-submit">
                             <button class="btn btn-submit">Go to News</button>
-                        </div>
+                        </div> -->
                         <div class="btn-group-out">
                             <button onclick="CloseModal()" class="btn btn-out">Close</button>
                         </div>
