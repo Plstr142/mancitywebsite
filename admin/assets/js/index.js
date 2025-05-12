@@ -1,3 +1,17 @@
+// const root = document.documentElement;
+
+// root.style.setProperty("--body-color", "#98c5e9");
+// root.style.setProperty("--container-color", "hsl(212, 42%, 20%)");
+// root.style.setProperty("--extra-color", "#182c76ff");
+// root.style.setProperty("--card-data-color", "hsl(21, 42%, 20%)");
+// root.style.setProperty(
+//   "--gradient-data-color",
+//   "radial-gradient(ellipse at center, #256273FF 20%, #D0FEFAEB 100%)"
+// );
+// root.style.setProperty("--light", "#fff");
+// root.style.setProperty("--extra1-color", "#1E4D72FF");
+// root.style.setProperty("--extra2-color", "#FFB3F7FF");
+
 const BASE_PATH = "assets/images/";
 
 // var productposter = [
@@ -593,7 +607,9 @@ function searchsomething(elem) {
     }
   }
   if (html == "") {
-    $("#card-news").html(`<p>Not found News or ${value}</p>`);
+    $("#card-news").html(
+      `<p style="color: var(--light)">Not found News or ${value}</p>`
+    );
   } else {
     $("#card-news").html(html);
   }
