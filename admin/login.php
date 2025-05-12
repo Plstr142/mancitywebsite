@@ -99,7 +99,7 @@
                 <div id="result" class="result"></div>
                 <input type="text" id="username" class="form-control" placeholder="username">
                 <input type="password" id="password" class="form-control" placeholder="password">
-                <button type="submit" class="btn btn-info">Login</button>
+                <button type="submit" class="btn">Login</button>
             </form>
         </main>
         <footer>
