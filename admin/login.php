@@ -96,7 +96,7 @@
         <main class="loginformcon">
             <form class="loginform" id="loginForm" action="">
                 <h2>Admin Login</h2>
-                <div id="result"></div>
+                <div id="result" class="result"></div>
                 <input type="text" id="username" class="form-control" placeholder="username">
                 <input type="password" id="password" class="form-control" placeholder="password">
                 <button type="submit" class="btn btn-info">Login</button>
@@ -143,7 +143,7 @@
                                 window.location.href = "index.php";
                                 // $("#result").html('<p style="color: green;">' + response.message + '</p>');
                             } else {
-                                $("#result").html('<p style="color: danger;">' + response.message + '</p>');
+                                $("#result").html('<p style="color: danger; background-color: transparent">' + response.message + '</p>');
                             }
                         },
                         error: function(response) {
