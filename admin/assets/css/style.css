@@ -2510,7 +2510,6 @@ hr.my-1-1 {
   z-index: 99;
   min-width: 30vw;
   max-width: 50vw;
-  /* max-height: 30vw; */
   height: auto;
   background: var(--container-color);
   padding: 20px;
@@ -2521,12 +2520,14 @@ hr.my-1-1 {
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    max-width: 90%;
+    max-width: 95%;
+    width: 95%;
   }
 
   /* iPhone 14 Pro Max */
   @media (min-width: 415px) and (max-width: 431px) {
-    max-width: 90%;
+    max-width: 95%;
+    width: 95%;
   }
 }
 
@@ -2634,29 +2635,29 @@ hr.my-1-1 {
   height: auto;
   background: transparent;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  border: 1px solid transparent;
+  gap: 5px;
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
     max-width: 100%;
-    height: 12vw;
+    height: auto;
     background: transparent;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
   }
 
   /* iPhone 14 Pro Max */
   @media (min-width: 415px) and (max-width: 431px) {
     max-width: 100%;
-    height: 12vw;
+    height: auto;
     background: transparent;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
   }
-
-  
 }
 
 /* .btn {
@@ -2667,7 +2668,7 @@ hr.my-1-1 {
 .btn-group-submit {
   max-width: 65%;
   width: 65%;
-  height: 3.5vw;
+  height: auto;
   outline: none;
   border-radius: 0.75rem 0.75rem;
   text-align: start;
@@ -2687,6 +2688,32 @@ hr.my-1-1 {
   border-radius: 0.75rem 0.75rem;
   position: relative;
   z-index: 1;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    color: var(--body-color);
+    border-radius: 0.75rem 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    color: var(--body-color);
+    border-radius: 0.75rem 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .btn-submit:hover {
@@ -2701,6 +2728,32 @@ hr.my-1-1 {
   background: var(--body-color);
   position: relative;
   z-index: 1;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    color: black;
+    border-radius: 0.75rem 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    color: black;
+    border-radius: 0.75rem 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .btn-submit:focus {
@@ -2709,11 +2762,36 @@ hr.my-1-1 {
   height: 3.5vw;
   outline: none;
   text-align: center;
-  transform: translateX(67%);
-  background: var(--extra1-color);
+  transform: translateX(56%);
   color: var(--card-data-color);
   transition: all 0.6s ease; 
   border-radius: 0.75rem 0.75rem;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    border-radius: 0.75rem 0.75rem;
+    transform: translateX(56%);
+    position: relative;
+    z-index: 1;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    max-width: 100%;
+    width: 60%;
+    height: 15vw;
+    outline: none;
+    text-align: start;  
+    transform: translateX(56%);
+    border-radius: 0.75rem 0.75rem;
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .btn-group-out {
@@ -2894,6 +2972,46 @@ hr.my-1-1 {
   border: 2px solid transparent;
   /* border: 2px solid white; */
   /* justify-content: space-between; */
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: auto;
+    height: 22vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    width: auto;
+    height: 22vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.cartlist-img {
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  /* margin: 5px 5px 5px 6px; */
+  justify-content: center;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .cartlist-img img {
@@ -2902,6 +3020,26 @@ hr.my-1-1 {
   margin: 5px 5px 5px 6px;
   border-radius: 2px;
   justify-content: center;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 16vw;
+    height: 100%;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    width: 16vw;
+    height: 100%;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
 }
 
 .cartlist-center {
@@ -2912,6 +3050,28 @@ hr.my-1-1 {
   justify-content: start;
   align-items: center;
   margin: 3px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    background: var(--body-color);
+    border: 2px solid var(--container-color);
+    display: flex;
+    width: 60%;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    background: var(--body-color);
+    border: 2px solid var(--container-color);
+    display: flex;
+    width: 60%;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
+  }
 }
 
 .cartlist-right {
@@ -2924,19 +3084,61 @@ hr.my-1-1 {
   justify-content: center;
   align-items: center;
   margin: 2px;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    width: 26%;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    width: 24%;
+  }
 }
 
 .cartlist-detail {
   margin: 2px 10px 2px 10px;
   text-align: start;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    margin: auto;
+    text-align: start;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    margin: 2px;
+    text-align: start;
+  }
 }
 
 .cartlist-detail .product-name {
   font-size: 1.5vw;
+  
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 3.8vw;
+  }
+  
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    font-size: 3.8vw;
+  }
 }
 
-.cartlist-detail .product-name {
+.cartlist-detail .product-price {
   font-size: 1.2vw;
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    font-size: 3.5vw;
+  }
+  
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    font-size: 3.5vw;
+  }
 }
 
 .btnc {
