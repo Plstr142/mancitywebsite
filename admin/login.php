@@ -13,7 +13,7 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="./assets/css/formlogin.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -91,19 +91,22 @@
                 </div>
             </div>
         </nav> -->
+
         
-        <main class="container">
-            <form id="loginForm" action="">
+        <main class="loginformcon">
+            <form class="loginform" id="loginForm" action="">
                 <h2>Admin Login</h2>
                 <div id="result"></div>
-                <input type="text" id="username" class="mt-3 form-control" placeholder="username">
-                <input type="password" id="password" class="mt-3 form-control" placeholder="password">
-                <button type="submit" class="mt-3 btn btn-info">Login</button>
+                <input type="text" id="username" class="form-control" placeholder="username">
+                <input type="password" id="password" class="form-control" placeholder="password">
+                <button type="submit" class="btn btn-info">Login</button>
             </form>
         </main>
         <footer>
             <!-- place footer here -->
         </footer>
+
+        <script type="module" src="./assets/js/inputphd.js"></script>
 
         <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
         <!-- Bootstrap JavaScript Libraries -->

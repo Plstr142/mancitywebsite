@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #182c76, #256273);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  background: var(--container-color);
+}
+
+:root {
+  --body-color: #98c5e9;
+  --container-color: hsl(212, 42%, 20%);
+  --extra-color: #182c76ff;
+  --card-data-color: hsl(21, 42%, 20%);
+  --gradient-data-color: radial-gradient(
+    ellipse at center,
+    #256273ff 20%,
+    #d0fefaeb 100%
+  );
+  --light: #fff;
+  --extra1-color: #1e4d72ff;
+  --extra2-color: #ffb3f7ff;
+}
+
+.loginformcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.loginform {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  width: 320px;
+  color: #fff;
+}
+
+.loginform h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--body-color);
+  background: transparent;
+}
+
+.loginform input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  /* background-color: rgba(255, 255, 255, 0.15); */
+  color: black;
+}
+
+.loginform input::placeholder {
+  /* color: #cfd8dc; */
+  color: #4a4a4aff;
+}
+
+.loginform button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--body-color);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginform button:hover {
+  background-color: black;
+  color: var(--light);
+}
