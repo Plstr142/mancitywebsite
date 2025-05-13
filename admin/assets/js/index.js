@@ -1082,7 +1082,7 @@ window.addEventListener("load", checkViewport);
 window.addEventListener("resize", checkViewport);
 
 // scroll mouse
-const container = document.querySelector(".news-items");
+const container = document.querySelector(".news-item");
 let isDown = false;
 let startX;
 let scrollLeft;

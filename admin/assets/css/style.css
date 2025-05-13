@@ -483,6 +483,17 @@ nav .nav-container {
   justify-content: center;
   align-items: center;
   color: var(--container-color);
+
+
+  /* Galaxy S8+ */
+  @media (min-width: 320px) and (max-width: 360px) {
+    top: -6px;
+  }
+
+  /* iPhone 14 Pro Max */
+  @media (min-width: 415px) and (max-width: 431px) {
+    top: -7px;
+  }
 }
 
 .fa-cart-shopping {
@@ -1135,6 +1146,19 @@ hr.my-1-1 {
   right: 1.5rem;
   bottom: 1rem;
   display: none;
+  z-index: 1;
+}
+
+#btt-tables {
+  font-size: 65px;
+  border: none;
+  background-color: transparent;
+  color: var(--extra1-color); 
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1rem;
+  display: none;
+  z-index: 1;
 }
 
 .box-search {
@@ -3075,7 +3099,7 @@ hr.my-1-1 {
 }
 
 .cartlist-right {
-  width: 20%;
+  width: 19%;
   background: var(--container-color);
   border:2px solid transparent;
   /* border-radius: 0 0.25rem 0.25rem 0; */
@@ -3087,12 +3111,12 @@ hr.my-1-1 {
 
   /* Galaxy S8+ */
   @media (min-width: 320px) and (max-width: 360px) {
-    width: 26%;
+    width: 29%;
   }
 
   /* iPhone 14 Pro Max */
   @media (min-width: 415px) and (max-width: 431px) {
-    width: 24%;
+    width: 29%;
   }
 }
 
