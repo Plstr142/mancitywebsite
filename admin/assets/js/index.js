@@ -1038,7 +1038,19 @@ function deinitems(action, index) {
 }
 
 function Buynow() {
-  as;
+  $.ajax({
+    method: "post",
+    url: "./api/buynow.php",
+    data: {
+      productposter: cart,
+    },
+    success: function (response) {
+      console.log(response);
+    },
+    error: function (err) {
+      console.log(err);
+    },
+  });
 }
 
 // btt back to top

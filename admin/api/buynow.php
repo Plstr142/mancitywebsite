@@ -21,13 +21,22 @@
                 }
 
                 for ($i=0; $i < count($productposter); $i++) {
-                    for ($i=0; $i < count($queryproduct); $i++) {
+                    for ($k=0; $k < count($queryproduct); $k++) {
                         // count productposter
+                        if(intval($productposter[$i]['id']) == intval($queryproduct[$k]['id'])) {
+                            $amount += intval($productposter[$i]['count']) * intval($queryproduct[$k]['price']);
+                            break;
+                        }
                     }
                 }
+
+                $object->RespCode = 200;
+                $object->Amount = $amount;
+                echo json_encode($object);
+                http_response_code(200);
             } 
             else {
-                
+                echo json_encode($queryproduct, $items);
             }
         }   
         else{
