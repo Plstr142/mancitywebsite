@@ -1038,7 +1038,7 @@ function deinitems(action, index) {
 }
 
 function Buynow() {
-  asdasd;
+  as;
 }
 
 // btt back to top

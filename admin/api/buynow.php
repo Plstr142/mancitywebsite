@@ -4,10 +4,10 @@
     try  {
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $object = new stdClass();
-            $amount = 0;
+            $amount = 0; 
             $productposter = $_POST['productposter'];
             
-            $stmt = $db->prepare('select id, price from shopping_product order by id asc');
+            $stmt = $db->prepare('select id, price from shopping_product order by id asc'); 
             if($stmt->execute()) {
 
                 $queryproduct = array();
@@ -17,7 +17,7 @@
                         "id" => $id,
                         "price" => $price, 
                     );
-                    array_push( $queryproduct, $items);
+                    array_push($queryproduct, $items);
                 }
 
                 for ($i=0; $i < count($productposter); $i++) {

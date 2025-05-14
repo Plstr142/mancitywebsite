@@ -87,7 +87,7 @@
         <br>
         <div class="btn-control">
             <div class="btn-group-submit">
-                <button onclick="Buynow()" class="btn btn-submit">Check Out</button>
+                <button onclick="Buynow()" class="btn btn-submit">Buy</button>
             </div>
             <div class="btn-group-out">
                 <button onclick="CloseModal()" class="btn btn-out">Close</button>
