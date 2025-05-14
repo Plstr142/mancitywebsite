@@ -5,6 +5,7 @@
     $db_pass = '';
 
     header('Content-Type: application/json');
+    date_default_timezone_set("Asia/Bangkok");
 
     try {
         $dsn = "mysql:host=$db_host;dbname=$db_name";
