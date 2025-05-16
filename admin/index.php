@@ -110,7 +110,7 @@ $username = htmlspecialchars(isset($adminData['username']) ? $adminData['usernam
                 <li class="dropdown">
                     <a href="#">Fixtures</a>
                     <ul class="dropdown-menu">
-                        <li><a class="li-upcoming" href="#">Upcoming</a></li>
+                        <li><a class="li-upcoming" href="#">Upcoming Mancity</a></li>
                         <!-- <li><a class="li-results" href="#">Results</a></li> -->
                         <li><a class="li-tables" href="tables.php">Tables</a></li>
                     </ul>
