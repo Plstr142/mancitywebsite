@@ -125,7 +125,7 @@ $username = htmlspecialchars(isset($adminData['username']) ? $adminData['usernam
                 </div>
             </div>
 
-            <div class="d-flex my-2">
+            <div class="d-flex my-2 my-lg-0">
                 <?php if (isset($_SESSION['adminid'])) { ?>
                     <a id="logout" class="btn btn-dark">Log Out</a>
                 <?php } else { ?>
