@@ -124,6 +124,13 @@ $username = htmlspecialchars(isset($adminData['username']) ? $adminData['usernam
                     <div id="cartcount" class="cartcount" style="display: none;">0</div>
                 </div>
             </div>
+
+            <div class="d-flex my-2">
+                <?php if (isset($_SESSION['adminid'])) { ?>
+                    <a id="logout" class="btn btn-dark">Log Out</a>
+                <?php } else { ?>
+                <?php } ?>
+            </div>
         </div>
     </nav>
 
